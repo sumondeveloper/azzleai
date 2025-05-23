@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@theme {
+  --color-primary: #191919;
+  --font-primary: "Inter", sans-serif;
+  --font-secondary: "DM Sans", sans-serif;
+}
+@layer components {
+  .sub-menu {
+    @apply absolute top-[6rem] p-[15px] rounded-[6px] origin-[50%_-170px] backdrop-blur bg-white px-4;
+  }
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center;
+  }
+  .flex-center-between {
+    @apply flex items-center justify-between;
+  }
+}
+/* globals.css বা index.css */
+.orange-gradient-1 {
+  filter: blur(55px);
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(255, 152, 49),
+    rgb(254, 51, 10)
+  );
+}
+
+.orange-gradient-2 {
+  filter: blur(55px);
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(254, 51, 10),
+    rgb(255, 152, 49)
+  );
+}
