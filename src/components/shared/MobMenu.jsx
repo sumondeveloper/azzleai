@@ -1,14 +1,23 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import { Menu, X, ChevronDown } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 const MobMenu = ({ Menus }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [clicked, setClicked] = useState(null);
+  const location = useLocation();
+
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
     setClicked(null);
   };
+
+  // এই useEffect টি route change হলে menu বন্ধ করবে
+  useEffect(() => {
+    setIsOpen(false);
+    setClicked(null);
+  }, [location.pathname]); // যখন path পরিবর্তিত হবে তখন এটা রান করবে
 
   const subMenuDrawer = {
     enter: {
@@ -20,6 +29,7 @@ const MobMenu = ({ Menus }) => {
       overflow: "hidden",
     },
   };
+
   return (
     <div>
       <button className="lg:hidden z-[999] relative" onClick={toggleDrawer}>
@@ -37,8 +47,8 @@ const MobMenu = ({ Menus }) => {
             const hasSubMenu = subMenu?.length;
             return (
               <li key={name} className="border-b border-black/15 font-medium">
-                <a
-                  href={path}
+                <Link
+                  to={path}
                   className="flex-center-between p-4 hover:bg-white/5 rounded-md cursor-pointer relative"
                   onClick={() => setClicked(isClicked ? null : i)}
                 >
@@ -48,7 +58,7 @@ const MobMenu = ({ Menus }) => {
                       className={`ml-auto ${isClicked && "rotate-180"} `}
                     />
                   )}
-                </a>
+                </Link>
                 {hasSubMenu && (
                   <motion.ul
                     initial="exit"
@@ -61,7 +71,7 @@ const MobMenu = ({ Menus }) => {
                         key={name}
                         className="p-2 flex-center hover:bg-white/5 rounded-md gap-x-2 cursor-pointer border-t border-black/20"
                       >
-                        <a href={path}>{name}</a>
+                        <Link to={path}>{name}</Link>
                       </li>
                     ))}
                   </motion.ul>
@@ -74,4 +84,5 @@ const MobMenu = ({ Menus }) => {
     </div>
   );
 };
+
 export default MobMenu;

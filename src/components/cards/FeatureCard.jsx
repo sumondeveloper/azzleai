@@ -1,5 +1,6 @@
 import ArrowRight from "../../assets/icons/arrowright.svg";
 import ArrowOrange from "../../assets/icons/arroworange.svg";
+import { Link } from "react-router-dom";
 
 const FeatureCard = ({ feature }) => {
   return (
@@ -30,7 +31,7 @@ const FeatureCard = ({ feature }) => {
         <p className="font-primary text-lg mt-4 ">{feature.desc}</p>
 
         {/* Arrow Icon */}
-        <a href="/">
+        <Link to="/servicedetail">
           <div className="mt-10">
             <img src={ArrowRight} alt="" className="group-hover:hidden" />
             <img
@@ -39,7 +40,7 @@ const FeatureCard = ({ feature }) => {
               className="hidden group-hover:block"
             />
           </div>
-        </a>
+        </Link>
       </div>
     </div>
   );

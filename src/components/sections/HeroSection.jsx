@@ -2,11 +2,12 @@ import Button from "../shared/Button";
 import MaxWidthWrapper from "../shared/MaxWidthWrapper";
 import Banner from "../../assets/images/banner.webp";
 import LogoTicker from "./LogoTicker";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
-    <section className="py-20 relative overflow-clip rounded-b-[50px]">
-      <div class="orange-gradient-1 absolute -right-[150px] top-[370px] -z-[1] h-[500px] w-[500px]  rounded-[500px]"></div>
+    <section className="py-20 bg-[#efeae3] relative overflow-clip rounded-b-[50px] md:rounded-b-0 z-5">
+      <div class="orange-gradient-1 absolute -right-[150px] top-[300px] -z-[1] h-[500px] w-[500px] rounded-[500px]"></div>
       <div class="orange-gradient-2 absolute right-[57px] top-[620px] -z-[1] h-[450px] w-[450px] rounded-[450px]"></div>
       <MaxWidthWrapper className="lg:px-8">
         <h1 className="text-[48px] text-center font-bold tracking-tight font-secondary leading-[48px] lg:text-[120px] lg:leading-[120px] sm:text-7xl sm:leading-[70px]">
@@ -20,14 +21,14 @@ const HeroSection = () => {
           </p>
         </div>
         <div className="flex items-center flex-col gap-4 mt-6 sm:flex-row justify-center lg:mt-10">
-          <a href="">
+          <Link to="/contact">
             <Button className=" bg-black text-white text-lg py-4 border-none font-semibold font-primary">
               Get started for free
             </Button>
-          </a>
-          <a href="">
+          </Link>
+          <Link to="/about">
             <Button className="px-5 py-4 font-primary">Learn more</Button>
-          </a>
+          </Link>
         </div>
         <div className="mt-15">
           <img

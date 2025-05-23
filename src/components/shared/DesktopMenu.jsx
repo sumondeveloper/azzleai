@@ -1,6 +1,7 @@
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { motion } from "motion/react";
+import { Link } from "react-router-dom";
 
 const DesktopMenu = ({ menu }) => {
   const hasSubMenu = menu?.subMenu?.length > 0;
@@ -32,15 +33,15 @@ const DesktopMenu = ({ menu }) => {
       onHoverStart={toggleHoverMenu}
       onHoverEnd={closeHoverMenu}
     >
-      <a
-        href={menu.path}
+      <Link
+        to={menu.path}
         className="flex items-center gap-1 hover:bg-white/5 cursor-pointer px-3 py-1 rounded-xl font-semibold"
       >
         {menu.name}
         {hasSubMenu && (
           <ChevronDown className="mt-[0.6px] group-hover/link:rotate-180 duration-200" />
         )}
-      </a>
+      </Link>
 
       {hasSubMenu && (
         <motion.div
@@ -51,13 +52,13 @@ const DesktopMenu = ({ menu }) => {
         >
           <div className="flex flex-col gap-2 w-[200px]">
             {menu?.subMenu?.map((subMenu, i) => (
-              <a
+              <Link
                 key={i}
-                href={subMenu.path}
+                to={subMenu.path}
                 className="block font-semibold text-gray-800 hover:text-red-500 transition-colors duration-300"
               >
                 {subMenu?.name}
-              </a>
+              </Link>
             ))}
           </div>
         </motion.div>

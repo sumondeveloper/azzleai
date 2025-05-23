@@ -6,7 +6,7 @@ import { LogoTickerItems } from "../../utils/constants";
 const LogoTicker = () => {
   const logos = [...LogoTickerItems, ...LogoTickerItems];
   return (
-    <div className="mt-15">
+    <div className="mt-15 py-5">
       <Swiper
         loop={true}
         modules={[Autoplay]}
