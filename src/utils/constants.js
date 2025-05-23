@@ -103,3 +103,56 @@ export const FeaturesItems = [
     orangeicon: FeatureOrangeFour,
   },
 ];
+export const monthlyPlans = [
+  {
+    title: "Beginner",
+    members: "Up to 10 members",
+    price: 25,
+    period: "month",
+    description:
+      "This is an excellent option for people & small businesses who are starting out.",
+  },
+  {
+    title: "Starter",
+    members: "Up to 50 members",
+    price: 89,
+    period: "month",
+    description:
+      "This plan is suitable for e-commerce stores as well as professional blogs.",
+  },
+  {
+    title: "Pro",
+    members: "Up to 100 members",
+    price: 199,
+    period: "month",
+    description:
+      "Ideal for handling complicated projects, enterprise-level projects, and websites.",
+  },
+];
+
+export const annuallyPlans = [
+  {
+    title: "Beginner",
+    members: "Up to 10 members",
+    price: 240,
+    period: "year",
+    description:
+      "This is an excellent option for people & small businesses who are starting out.",
+  },
+  {
+    title: "Starter",
+    members: "Up to 50 members",
+    price: 960,
+    period: "year",
+    description:
+      "This plan is suitable for e-commerce stores as well as professional blogs.",
+  },
+  {
+    title: "Pro",
+    members: "Up to 100 members",
+    price: 1800,
+    period: "year",
+    description:
+      "Ideal for handling complicated projects enterprise-level projects, and websites.",
+  },
+];
