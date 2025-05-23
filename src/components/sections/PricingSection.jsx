@@ -8,7 +8,7 @@ const PricingSection = () => {
   const plans = isMonthly ? monthlyPlans : annuallyPlans;
 
   return (
-    <section className=" bg-white lg:py-24">
+    <section className=" bg-white lg:py-24 py-15">
       <MaxWidthWrapper>
         <div>
           <div className="lg:max-w-3xl sm:max-w-[364px] mx-auto">

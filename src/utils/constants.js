@@ -11,6 +11,13 @@ import FeatureOrangeOne from "../assets/icons/featureorangeone.svg";
 import FeatureOrangeTwo from "../assets/icons/featureorangetwo.svg";
 import FeatureOrangeThree from "../assets/icons/featureorange3.svg";
 import FeatureOrangeFour from "../assets/icons/featureiconorange4.svg";
+import ManOne from "../assets/images/manone.webp";
+import ManTwo from "../assets/images/man2.jpg";
+import ManThree from "../assets/images/man3.webp";
+import ManFour from "../assets/images/man4.webp";
+import ManFive from "../assets/images/man5.webp";
+import ManSix from "../assets/images/man6.webp";
+
 export const Menus = [
   {
     name: "Home",
@@ -154,5 +161,44 @@ export const annuallyPlans = [
     period: "year",
     description:
       "Ideal for handling complicated projects enterprise-level projects, and websites.",
+  },
+];
+export const testimonials = [
+  {
+    image: ManOne,
+    name: "Max Weber",
+    desc: "“This AI SaaS tool has revolutionized the way we process and analyze data. This is a game-changer for our business.”",
+    speaclist: "HR Manager",
+  },
+
+  {
+    image: ManTwo,
+    name: "Douglas Smith",
+    desc: "“It answers immediately, and we've seen a significant reduction in response time. Our customers love it and so do we!”",
+    speaclist: "Businessman",
+  },
+  {
+    image: ManThree,
+    name: "Abraham Maslo",
+    desc: "“It is accurate, fast and supports multiple languages support. It is a must for any international business success.”",
+    speaclist: "Founder @ Marketing Company",
+  },
+  {
+    image: ManFour,
+    name: "Jack Fayol",
+    desc: "“Security is a top concern for us, and AI SaaS takes it seriously. It's a reassuring layer of protection for our organization.”",
+    speaclist: "HR Manager",
+  },
+  {
+    image: ManFive,
+    name: "Max Weber",
+    desc: "“We were concerned about integrating their APIs were well documented, and their support team was super cool.”",
+    speaclist: "Software Engineer",
+  },
+  {
+    image: ManSix,
+    name: "Henry Ochi",
+    desc: "“The return on investment has exceeded our expectations. it's an investment in the future of our business.”",
+    speaclist: "Bank Manager",
   },
 ];
