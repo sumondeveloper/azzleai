@@ -2,15 +2,18 @@ import PlayerImage from "../../assets/images/funfact-image.jpg";
 
 const VideoPlayer = () => {
   return (
-    <section className="bg-white lg:py-24 py-15">
-      <div className="mx-auto max-w-[1500px] sm:px-5 px-2">
+    <section className="bg-white lg:py-24 py-15 relative ">
+      <div className="orange-gradient-1 absolute top-[400px] h-[400px] w-[250px] -rotate-[-9.022deg] rounded-[400px] z-20 hidden lg:block"></div>
+      <div className="orange-gradient-1 absolute top-[300px] h-[600px] w-[250px] -rotate-[-9.022deg] rounded-[400px] z-20 hidden lg:block"></div>
+
+      <div className="mx-auto max-w-[1500px] sm:px-5 px-2 ">
         <div className="grid grid-cols-1 overflow-hidden rounded-[30px] bg-black lg:rounded-[50px] xl:grid-cols-[minmax(400px,_1fr)_1.5fr] xxl:grid-cols-[1fr_minmax(800px,_1fr)]">
           {/* Image and Button */}
           <div className="relative overflow-hidden rounded-[30px] lg:rounded-[50px]">
             <img
               src={PlayerImage}
               alt="funfact"
-              className="h-80 w-full object-cover object-center lg:h-[35rem] xl:h-full"
+              className="h-80 w-full object-cover object-center lg:h-[35rem] xl:h-full relative z-50"
             />
             <button className="absolute left-1/2 top-1/2 z-[1] -translate-x-1/2 -translate-y-1/2">
               <div className="relative flex h-[120px] w-[120px] items-center justify-center rounded-full border-[3px] border-black text-lg font-bold backdrop-blur-[2px] transition-all duration-300 hover:bg-red-500 hover:text-white">

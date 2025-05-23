@@ -8,16 +8,18 @@ const PricingSection = () => {
   const plans = isMonthly ? monthlyPlans : annuallyPlans;
 
   return (
-    <section className=" bg-white lg:py-24 py-15">
+    <section className=" bg-white lg:py-24 py-15 relative overflow-clip">
+      <div class="orange-gradient-1 absolute h-[600px] w-[400px] -rotate-[-9.022deg] rounded-[400px] sm:to-0%  top-[18%] lg:hidden block"></div>
+
       <MaxWidthWrapper>
-        <div>
+        <div className="relative z-50">
           <div className="lg:max-w-3xl sm:max-w-[364px] mx-auto">
             <h2 className="text-[36px] font-secondary leading-10 text-primary font-bold text-center lg:text-[80px] lg:leading-[90px]">
               Cost-effectively build any software
             </h2>
           </div>
           {/* Toggle */}
-          <div className="container mx-auto font-primary mt-10">
+          <div className="container mx-auto font-primary mt-10 ">
             <div className="flex justify-center">
               <div className="inline-flex space-x-2 rounded-full border-2 border-black font-semibold">
                 <button
