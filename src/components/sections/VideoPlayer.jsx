@@ -7,8 +7,8 @@ const VideoPlayer = () => {
   return (
     <section className="bg-white lg:py-24 py-15 relative ">
       {/* Gradient Background */}
-      <div className="orange-gradient-1 absolute top-[400px] h-[400px] w-[250px] -rotate-[-9.022deg] rounded-[400px] z-20 hidden lg:block"></div>
-      <div className="orange-gradient-1 absolute top-[300px] h-[600px] w-[250px] -rotate-[-9.022deg] rounded-[400px] z-20 hidden lg:block"></div>
+      <div className="orange-gradient-1 absolute top-[400px] h-[400px] w-[250px] -rotate-[-9.022deg] rounded-[400px] z-2 hidden lg:block"></div>
+      <div className="orange-gradient-1 absolute top-[300px] h-[600px] w-[250px] -rotate-[-9.022deg] rounded-[400px] z-2 hidden lg:block"></div>
 
       {/* Main Content */}
       <div className="mx-auto max-w-[1500px] sm:px-5 px-2 ">
