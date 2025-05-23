@@ -202,3 +202,43 @@ export const testimonials = [
     speaclist: "Bank Manager",
   },
 ];
+export const footerPrimaryPages = [
+  {
+    page: "Home",
+    path: "/",
+  },
+  {
+    page: "About Us",
+    path: "/about",
+  },
+  {
+    page: "Services",
+    path: "/services",
+  },
+  {
+    page: "Pricing",
+    path: "/pricing",
+  },
+  {
+    page: "Contact",
+    path: "/contact",
+  },
+];
+export const footerUtilitiesPages = [
+  {
+    page: "Signup",
+    path: "/signup",
+  },
+  {
+    page: "Login",
+    path: "/login",
+  },
+  {
+    page: "404 Not found",
+    path: "/notfound",
+  },
+  {
+    page: "Password Reset",
+    path: "/reset",
+  },
+];

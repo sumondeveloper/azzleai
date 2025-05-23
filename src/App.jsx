@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./components/elements/Footer";
 import Navbar from "./components/elements/Navbar";
 import AudienceSection from "./components/sections/AudienceSection";
 import Features from "./components/sections/Features";
@@ -17,6 +18,7 @@ function App() {
       <VideoPlayer />
       <PricingSection />
       <TestimonialSection />
+      <Footer />
     </>
   );
 }
