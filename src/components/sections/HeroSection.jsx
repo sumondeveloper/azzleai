@@ -5,7 +5,7 @@ import LogoTicker from "./LogoTicker";
 
 const HeroSection = () => {
   return (
-    <section className="py-20 relative overflow-clip rounded">
+    <section className="py-20 relative overflow-clip rounded-b-[50px]">
       <div class="orange-gradient-1 absolute -right-[150px] top-[370px] -z-[1] h-[500px] w-[500px]  rounded-[500px]"></div>
       <div class="orange-gradient-2 absolute right-[57px] top-[620px] -z-[1] h-[450px] w-[450px] rounded-[450px]"></div>
       <MaxWidthWrapper className="lg:px-8">
