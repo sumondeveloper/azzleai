@@ -200,59 +200,7 @@ export const FeaturesItems = [
     orangeicon: FeatureOrangeFour,
   },
 ];
-export const monthlyPlans = [
-  {
-    title: "Beginner",
-    members: "Up to 10 members",
-    price: 25,
-    period: "month",
-    description:
-      "This is an excellent option for people & small businesses who are starting out.",
-  },
-  {
-    title: "Starter",
-    members: "Up to 50 members",
-    price: 89,
-    period: "month",
-    description:
-      "This plan is suitable for e-commerce stores as well as professional blogs.",
-  },
-  {
-    title: "Pro",
-    members: "Up to 100 members",
-    price: 199,
-    period: "month",
-    description:
-      "Ideal for handling complicated projects, enterprise-level projects, and websites.",
-  },
-];
 
-export const annuallyPlans = [
-  {
-    title: "Beginner",
-    members: "Up to 10 members",
-    price: 240,
-    period: "year",
-    description:
-      "This is an excellent option for people & small businesses who are starting out.",
-  },
-  {
-    title: "Starter",
-    members: "Up to 50 members",
-    price: 960,
-    period: "year",
-    description:
-      "This plan is suitable for e-commerce stores as well as professional blogs.",
-  },
-  {
-    title: "Pro",
-    members: "Up to 100 members",
-    price: 1800,
-    period: "year",
-    description:
-      "Ideal for handling complicated projects enterprise-level projects, and websites.",
-  },
-];
 export const testimonials = [
   {
     image: ManOne,
@@ -949,3 +897,173 @@ export const faqData2 = {
     },
   ],
 };
+export const monthlyPlans = [
+  {
+    title: "Beginner",
+    members: "Up to 10 members",
+    price: 25,
+    period: "month",
+    description:
+      "This is an excellent option for people & small businesses who are starting out.",
+  },
+  {
+    title: "Starter",
+    members: "Up to 50 members",
+    price: 89,
+    period: "month",
+    description:
+      "This plan is suitable for e-commerce stores as well as professional blogs.",
+  },
+  {
+    title: "Pro",
+    members: "Up to 100 members",
+    price: 199,
+    period: "month",
+    description:
+      "Ideal for handling complicated projects, enterprise-level projects, and websites.",
+  },
+];
+
+export const annuallyPlans = [
+  {
+    title: "Beginner",
+    members: "Up to 10 members",
+    price: 240,
+    period: "year",
+    description:
+      "This is an excellent option for people & small businesses who are starting out.",
+  },
+  {
+    title: "Starter",
+    members: "Up to 50 members",
+    price: 960,
+    period: "year",
+    description:
+      "This plan is suitable for e-commerce stores as well as professional blogs.",
+  },
+  {
+    title: "Pro",
+    members: "Up to 100 members",
+    price: 1800,
+    period: "year",
+    description:
+      "Ideal for handling complicated projects enterprise-level projects, and websites.",
+  },
+];
+export const PricingmonthlyPlans = [
+  {
+    title: "Free",
+    members: "1 member",
+    price: 0,
+    period: "per month",
+    description:
+      "Ideal for individuals person and small businesses just getting started.",
+    features: ["AI-Ready Data Prep", "Feature Engineering"],
+  },
+  {
+    title: "Beginner",
+    members: "Up to 10 members",
+    price: 25,
+    period: "per month",
+    description:
+      "This is an excellent option for people & small businesses who are starting out.",
+    features: [
+      "AI-Ready Data Prep",
+      "Feature Engineering",
+      "Classification Models",
+      "Regression Models",
+    ],
+  },
+  {
+    title: "Starter",
+    members: "Up to 50 members",
+    price: 89,
+    period: "per month",
+    description:
+      "This plan is suitable for e-commerce stores as well as professional blogs.",
+    features: [
+      "AI-Ready Data Prep",
+      "Feature Engineering",
+      "Classification Models",
+      "Regression Models",
+      "Time Series Models",
+    ],
+  },
+  {
+    title: "Pro",
+    members: "Up to 100 members",
+    price: 199,
+    period: "per month",
+    description:
+      "Ideal for handling complicated projects, enterprise-level projects, and websites.",
+    features: [
+      "AI-Ready Data Prep",
+      "Feature Engineering",
+      "Classification Models",
+      "Regression Models",
+      "Time Series Models",
+      "Clustering models",
+    ],
+  },
+];
+
+export const PricingannuallyPlans = [
+  {
+    title: "Free",
+    members: "1 member",
+    price: 0,
+    period: "Annual",
+    description:
+      "Ideal for individuals person and small businesses just getting started.",
+    features: [
+      "AI-Ready Data Prep",
+      "Feature Engineering",
+      "Classification Models",
+    ],
+  },
+  {
+    title: "Beginner",
+    members: "Up to 10 members",
+    price: 240,
+    period: "Annual",
+    description:
+      "This is an excellent option for people & small businesses who are starting out.",
+    features: [
+      "AI-Ready Data Prep",
+      "Feature Engineering",
+      "Classification Models",
+      "Regression Models",
+    ],
+  },
+  {
+    title: "Starter",
+    members: "Up to 50 members",
+    price: 960,
+    period: "Annual",
+    description:
+      "This plan is suitable for e-commerce stores as well as professional blogs.",
+    features: [
+      "AI-Ready Data Prep",
+      "Feature Engineering",
+      "Classification Models",
+      "Regression Models",
+      "Time Series Models",
+    ],
+  },
+  {
+    title: "Pro",
+    members: "Up to 100 members",
+    price: 1800,
+    period: "Annual",
+    description:
+      "Ideal for handling complicated projects enterprise-level projects, and websites.",
+    features: [
+      "AI-Ready Data Prep",
+      "Feature Engineering",
+      "Classification Models",
+      "Regression Models",
+      "Time Series Models",
+      "Clustering models",
+    ],
+  },
+];

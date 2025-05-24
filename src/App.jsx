@@ -11,8 +11,9 @@ import ServiceDetails from "./pages/ServiceDetails";
 import Blog from "./pages/Blog";
 import BlogDetails from "./pages/BlogDetails";
 import Faq from "./pages/Faq";
-import Header from "./components/elements/Header";
+
 import Faq2 from "./pages/Faq2";
+import Pricing from "./pages/Pricing";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/blogdetails" element={<BlogDetails />} />
           <Route path="/faq-1" element={<Faq />} />
           <Route path="/faq-2" element={<Faq2 />} />
+          <Route path="/pricing" element={<Pricing />} />
 
           {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
