@@ -11,6 +11,10 @@ import FeatureOrangeOne from "../assets/icons/featureorangeone.svg";
 import FeatureOrangeTwo from "../assets/icons/featureorangetwo.svg";
 import FeatureOrangeThree from "../assets/icons/featureorange3.svg";
 import FeatureOrangeFour from "../assets/icons/featureiconorange4.svg";
+import FeatureBlackFive from "../assets/icons/service-icon-black-5.svg";
+import FeatureOrangeFive from "../assets/icons/service-icon-orange-5.svg";
+import FeatureBlackSix from "../assets/icons/service-icon-black-6.svg";
+import FeatureOrangeSix from "../assets/icons/service-icon-orange-6.svg";
 import ManOne from "../assets/images/manone.webp";
 import ManTwo from "../assets/images/man2.jpg";
 import ManThree from "../assets/images/man3.webp";
@@ -469,5 +473,72 @@ export const teamMembers = [
         iconBlack: InstagramIconBlack,
       },
     ],
+  },
+];
+export const services = [
+  {
+    title: "Resource Flexibility",
+    desc: "This is an excellent option for people & small businesses who are starting out.",
+    icon: FeatureOne,
+    orangeicon: FeatureOrangeOne,
+  },
+  {
+    title: "Managed Services",
+    desc: "This is an excellent option for people & small businesses who are starting out.",
+    icon: FeatureTwo,
+    orangeicon: FeatureOrangeTwo,
+  },
+  {
+    title: "Web-Based Access",
+    desc: "This is an excellent option for people &amp; small businesses who are starting out.",
+    icon: FeatureThree,
+    orangeicon: FeatureOrangeThree,
+  },
+  {
+    title: "Resource Flexibility",
+    desc: "This is an excellent option for people &amp; small businesses who are starting out.",
+    icon: FeatureFour,
+    orangeicon: FeatureOrangeFour,
+  },
+  {
+    title: "Anomaly Detection",
+    desc: "AI SaaS can analyze IoT sensor data to detect predict equipment failures.",
+    icon: FeatureBlackFive,
+    orangeicon: FeatureOrangeFive,
+  },
+  {
+    title: "Predictive Analytics",
+    desc: "Solutions that use AI to predict future trends and outcomes, such as demand forecastin.",
+    icon: FeatureBlackSix,
+    orangeicon: FeatureOrangeSix,
+  },
+  {
+    title: "Speech Recognition",
+    desc: "Speech recognition services convert spoken language into text and accessibility.",
+    icon: FeatureBlackSix,
+    orangeicon: FeatureOrangeSix,
+  },
+  {
+    title: "Computer Vision",
+    desc: "Computer vision services use AI to interpret and process visual information.",
+    icon: FeatureBlackSix,
+    orangeicon: FeatureOrangeSix,
+  },
+];
+export const servicesFaqs = [
+  {
+    question: "How do I start AI SaaS?",
+    answer:
+      "Go to our official website and create an account. You'll need to provide some basic information and agree to our terms and conditions.",
+  },
+  {
+    question: "Can I customize AI SaaS solutions?",
+    answer:
+      "Yes, customization is possible through our dashboard. You can integrate APIs and tweak the settings as per your business needs.",
+  },
+  {
+    question: "How can AI benefit my business?",
+    answer:
+      "AI helps automate tasks, reduce human error, enhance customer experience, and increase operational efficiency.",
   },
 ];
