@@ -785,3 +785,167 @@ export const faqsData = [
       "AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.",
   },
 ];
+export const faqData2 = {
+  "general-questions": [
+    {
+      question: "What is Artificial Intelligence (AI)?",
+      answer:
+        "AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.",
+    },
+    {
+      question: "What are the different types of AI?",
+      answer:
+        "AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.",
+    },
+    {
+      question: "What are some practical applications of AI?",
+      answer:
+        "AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.",
+    },
+    {
+      question: "What is the difference between AI and machine learning?",
+      answer:
+        "AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.",
+    },
+    {
+      question: "How can businesses use AI for competitive advantage?",
+      answer:
+        "AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.",
+    },
+    {
+      question: "Can AI replace humans in the workforce?",
+      answer:
+        "AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.",
+    },
+    {
+      question: "Is AI safe?",
+      answer:
+        "AI safety depends on how it's designed and regulated. Ethical AI practices are essential to prevent misuse.",
+    },
+    {
+      question: "What is the future of AI?",
+      answer:
+        "AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.",
+    },
+  ],
+  "about-the-company": [
+    {
+      question: "How can businesses AI for competitive advantage?",
+      answer:
+        "AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.",
+    },
+    {
+      question: "Can AI replace humans in the workforce?",
+      answer:
+        "AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.",
+    },
+    {
+      question: "Is AI safe?",
+      answer:
+        "AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.",
+    },
+    {
+      question: "What is the future of AI?",
+      answer:
+        "AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.",
+    },
+    {
+      question: "What is Artificial Intelligence (AI)?",
+      answer:
+        "AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.",
+    },
+    {
+      question: "What are the different types of AI?",
+      answer:
+        "AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.",
+    },
+    {
+      question: "What are some practical applications of AI?",
+      answer:
+        "AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.",
+    },
+    {
+      question: "What is the difference between AI and machine learning?",
+      answer:
+        "AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.",
+    },
+  ],
+  "about-artificial-intelligence": [
+    {
+      question: "What is Artificial Intelligence (AI)?",
+      answer:
+        "AI powers virtual assistants, recommendation systems, smart home devices, and much more in everyday life.",
+    },
+    {
+      question: "What are the different types of AI?",
+      answer:
+        "AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.",
+    },
+    {
+      question: "What is the difference between AI and machine learning?",
+      answer:
+        "AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.",
+    },
+    {
+      question: "How can businesses AI for competitive advantage?",
+      answer:
+        "AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.",
+    },
+    {
+      question: "Can AI replace humans in the workforce?",
+      answer:
+        "AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.",
+    },
+    {
+      question: "Is AI safe?",
+      answer:
+        "AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.",
+    },
+    {
+      question: "What is the future of AI?",
+      answer:
+        "AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.",
+    },
+  ],
+  "about-the-team": [
+    {
+      question: "How can businesses AI for competitive advantage?",
+      answer:
+        "Our team includes AI researchers, full-stack developers, UX designers, and business strategists with years of industry experience.",
+    },
+    {
+      question: "Can AI replace humans in the workforce?",
+      answer:
+        "Our team holds degrees in Computer Science, Data Science, and AI, and have worked on high-impact projects across the globe.",
+    },
+    {
+      question: "Is AI safe?",
+      answer:
+        "You can reach out to us via our contact form, and the relevant team member will follow up shortly.",
+    },
+    {
+      question: "What is the future of AI?",
+      answer:
+        "Yes, our team operates in a remote-first model, allowing us to collaborate across different time zones and countries.",
+    },
+    {
+      question: "What is Artificial Intelligence (AI)?",
+      answer:
+        "Yes, our team operates in a remote-first model, allowing us to collaborate across different time zones and countries.",
+    },
+    {
+      question: "What are the different types of AI?",
+      answer:
+        "Yes, our team operates in a remote-first model, allowing us to collaborate across different time zones and countries.",
+    },
+    {
+      question: "What are some practical applications of AI?",
+      answer:
+        "Yes, our team operates in a remote-first model, allowing us to collaborate across different time zones and countries.",
+    },
+    {
+      question: "What is the future of AI?",
+      answer: "What is the difference between AI and machine learning?",
+    },
+  ],
+};
