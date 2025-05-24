@@ -39,6 +39,16 @@ import TwitterIconWhite from "../assets/icons/twitter-icon-white.svg";
 import TwitterIconBlack from "../assets/icons/twitter-icon-black.svg";
 import LinkdienIconWhite from "../assets/icons/linkedin-icon-white.svg";
 import LinkdienIconBlack from "../assets/icons/linkedin-icon-black.svg";
+import Blog1 from "../assets/images/blog1.jpg";
+import Blog2 from "../assets/images/blog2.jpg";
+import Blog3 from "../assets/images/blog3.jpg";
+import Blog4 from "../assets/images/blog4.webp";
+import Blog5 from "../assets/images/blog5.webp";
+import Blog6 from "../assets/images/blog6.webp";
+import RecentBlogOne from "../assets/images/blog-recent1.jpg";
+import RecentBlogTwo from "../assets/images/blog-recent-img2.jpg";
+
+import RecentBlogThree from "../assets/images/blog-recent-img3.jpg";
 
 export const Menus = [
   {
@@ -582,3 +592,96 @@ export const locations = [
     position: "sm:top-[72%] sm:left-[88%]",
   },
 ];
+export const blogs = [
+  {
+    id: 1,
+    image: Blog1,
+    category: "Business",
+    date: "June 12, 2024",
+    title: "10 ways to supercharge startup with AI integration",
+    excerpt:
+      "The rapid advancements in AI have paved the way for startups to revolutionize operations...",
+    link: "/blog-details",
+  },
+  {
+    id: 2,
+    image: Blog2,
+    category: "Startup",
+    date: "May 30, 2024",
+    title: "5 essential tools for early-stage founders",
+    excerpt:
+      "Running a startup? These five tools will save your time, energy, and money...",
+    link: "/blog-details",
+  },
+  {
+    id: 3,
+    image: Blog3,
+    category: "Technology",
+    date: "May 20, 2024",
+    title: "The rise of AI: Opportunities and Challenges",
+    excerpt:
+      "Artificial Intelligence is no longer a buzzword—it's redefining how businesses operate in 2024 and beyond...",
+    link: "/blog-details",
+  },
+  {
+    id: 4,
+    image: Blog4,
+    category: "Marketing",
+    date: "May 15, 2024",
+    title: "How to create viral marketing campaigns using data",
+    excerpt:
+      "Want your campaigns to go viral? Learn how data-driven marketing increases your chances...",
+    link: "/blog-details",
+  },
+  {
+    id: 5,
+    image: Blog5,
+    category: "Design",
+    date: "April 29, 2024",
+    title: "Designing for humans: The psychology of UI/UX",
+    excerpt:
+      "Great design is more than aesthetics—understand the psychology behind user-friendly interfaces...",
+    link: "/blog-details",
+  },
+  {
+    id: 6,
+    image: Blog6,
+    category: "Growth",
+    date: "April 15, 2024",
+    title: "Scaling your product without breaking things",
+    excerpt:
+      "Growth is exciting but also risky. Here’s how to scale smoothly without breaking your product...",
+    link: "/blog-details",
+  },
+];
+export const categories = [
+  { name: "Business & Marketing", count: 18, href: "/blog-details" },
+  { name: "Technology", count: 5, href: "/blog-details" },
+  { name: "Art & Beauty", count: 23, href: "/blog-details" },
+  { name: "Digital Agency", count: 10, href: "/blog-details" },
+];
+
+export const recentPosts = [
+  {
+    id: 1,
+    title: "6 profitable AI tech businesses to start",
+    image: RecentBlogOne,
+    href: "/blog-details",
+    date: "June 12, 2024",
+  },
+  {
+    id: 2,
+    title: "Why i decided to sell my B2B SaaS AI business",
+    image: RecentBlogTwo,
+    href: "/blog-details",
+    date: "June 13, 2024",
+  },
+  {
+    id: 3,
+    title: "8 AI tools that will your streamline workflows",
+    image: RecentBlogThree,
+    href: "/blog-details",
+    date: "June 7, 2024",
+  },
+];
+export const tags = ["Article", "Business", "Digital", "Technology", "UI/UX"];
