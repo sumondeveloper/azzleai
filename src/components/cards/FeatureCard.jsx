@@ -31,7 +31,7 @@ const FeatureCard = ({ feature }) => {
         <p className="font-primary text-lg mt-4 ">{feature.desc}</p>
 
         {/* Arrow Icon */}
-        <Link to="/servicedetail">
+        <Link to="/servicedetails">
           <div className="mt-10">
             <img src={ArrowRight} alt="" className="group-hover:hidden" />
             <img

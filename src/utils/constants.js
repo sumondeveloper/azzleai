@@ -542,3 +542,43 @@ export const servicesFaqs = [
       "AI helps automate tasks, reduce human error, enhance customer experience, and increase operational efficiency.",
   },
 ];
+export const contactLinks = [
+  {
+    icon: FacebookIconWhite,
+    path: "www.facebook.com",
+  },
+  {
+    icon: TwitterIconWhite,
+    path: "www.x.com",
+  },
+  {
+    icon: LinkdienIconWhite,
+    path: "www.linkdien.com",
+  },
+  {
+    icon: InstagramIconWhite,
+    path: "www.instagram.com",
+  },
+];
+export const locations = [
+  {
+    name: "Toronto, Canada",
+    position: "sm:top-[10%] sm:left-[13%]",
+  },
+  {
+    name: "Sao Paulo, Brazil",
+    position: "sm:top-[65%] sm:left-[18%]",
+  },
+  {
+    name: "Bamako, Mali",
+    position: "sm:top-[38%] sm:left-[38%]",
+  },
+  {
+    name: "Noril'sk, Russia",
+    position: "sm:top-[5%] sm:left-[61%]",
+  },
+  {
+    name: "Lake Eyre, Australia",
+    position: "sm:top-[72%] sm:left-[88%]",
+  },
+];

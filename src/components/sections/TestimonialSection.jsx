@@ -4,7 +4,7 @@ import MaxWidthWrapper from "../shared/MaxWidthWrapper";
 
 const TestimonialSection = () => {
   return (
-    <section className="bg-black text-white lg:py-30 py-10 ">
+    <section className="bg-black text-white lg:py-50 py-10 ">
       <MaxWidthWrapper>
         <div className="lg:max-w-3xl mx-auto">
           <h2 className="text-white text-[36px] leading-[36px] font-semibold tracking-tighter text-center lg:text-[80px] lg:leading-[80px] lg:font-bold lg:mt-10">
