@@ -10,6 +10,8 @@ import Services from "./pages/Services";
 import ServiceDetails from "./pages/ServiceDetails";
 import Blog from "./pages/Blog";
 import BlogDetails from "./pages/BlogDetails";
+import Faq from "./pages/Faq";
+import Header from "./components/elements/Header";
 
 function App() {
   return (
@@ -25,7 +27,7 @@ function App() {
           <Route path="/servicedetails" element={<ServiceDetails />} />
           <Route path="/blogs" element={<Blog />} />
           <Route path="/blogdetails" element={<BlogDetails />} />
-
+          <Route path="/faq" element={<Faq />} />
           {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
 

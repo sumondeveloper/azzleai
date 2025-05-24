@@ -79,18 +79,58 @@ export const Menus = [
       {
         name: "Blogs",
         path: "/blogs",
+        subMenu: [
+          {
+            name: "Blog",
+            path: "/blogs",
+          },
+          {
+            name: "Blog Details",
+            path: "/blogdetails",
+          },
+        ],
       },
       {
         name: "Team",
         path: "/team",
+        subMenu: [
+          {
+            name: "Team",
+            path: "/team",
+          },
+          {
+            name: "Team Details",
+            path: "/teamdetails",
+          },
+        ],
       },
       {
-        name: "Faq",
+        name: "FAQ",
         path: "/faq",
+        subMenu: [
+          {
+            name: "FAQ-1",
+            path: "/faq-1",
+          },
+          {
+            name: "FAQ-2",
+            path: "/faq-2",
+          },
+        ],
       },
       {
         name: "Portfolio",
         path: "/portfolio",
+        subMenu: [
+          {
+            name: "Portfolio",
+            path: "/portfolio",
+          },
+          {
+            name: "Portfolio Details",
+            path: "/portfoliodetails",
+          },
+        ],
       },
       {
         name: "Pricing",
@@ -99,16 +139,34 @@ export const Menus = [
       {
         name: "Utilities",
         path: "/utilities",
+        subMenu: [
+          {
+            name: "Error 404",
+            path: "/error",
+          },
+          {
+            name: "Login",
+            path: "/login",
+          },
+          {
+            name: "Signup",
+            path: "/signup",
+          },
+          {
+            name: "Login",
+            path: "/login",
+          },
+        ],
       },
     ],
     gridCols: 2,
   },
-
   {
     name: "Contact",
     path: "/contact",
   },
 ];
+
 export const LogoTickerItems = [
   SiteMarkLogo,
   GreenishLogo,

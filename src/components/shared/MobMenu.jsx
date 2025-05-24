@@ -13,11 +13,11 @@ const MobMenu = ({ Menus }) => {
     setClicked(null);
   };
 
-  // এই useEffect টি route change হলে menu বন্ধ করবে
+  // route change হলে মেনু বন্ধ করবে
   useEffect(() => {
     setIsOpen(false);
     setClicked(null);
-  }, [location.pathname]); // যখন path পরিবর্তিত হবে তখন এটা রান করবে
+  }, [location.pathname]);
 
   const subMenuDrawer = {
     enter: {
@@ -28,6 +28,18 @@ const MobMenu = ({ Menus }) => {
       height: 0,
       overflow: "hidden",
     },
+  };
+
+  // লিংকে ক্লিক করলে মেনু বন্ধ করার হ্যান্ডলার
+  const handleLinkClick = (hasSubMenu, index) => {
+    if (hasSubMenu) {
+      // সাবমেনু থাকলে টগল করবে
+      setClicked(clicked === index ? null : index);
+    } else {
+      // সাবমেনু না থাকলে মেনু বন্ধ করবে
+      setIsOpen(false);
+      setClicked(null);
+    }
   };
 
   return (
@@ -44,32 +56,52 @@ const MobMenu = ({ Menus }) => {
         <ul>
           {Menus.map(({ name, subMenu, path }, i) => {
             const isClicked = clicked === i;
-            const hasSubMenu = subMenu?.length;
+            const hasSubMenu = subMenu?.length > 0;
             return (
               <li key={name} className="border-b border-black/15 font-medium">
-                <Link
-                  to={path}
+                <div
                   className="flex-center-between p-4 hover:bg-white/5 rounded-md cursor-pointer relative"
-                  onClick={() => setClicked(isClicked ? null : i)}
+                  onClick={() => handleLinkClick(hasSubMenu, i)}
                 >
-                  {name}
+                  <Link
+                    to={path}
+                    className="flex-grow"
+                    onClick={(e) => {
+                      // সাবমেনু থাকলে লিংকের ডিফল্ট নেভিগেশন রোধ করবে, নাহলে করবে
+                      if (hasSubMenu) e.preventDefault();
+                      else {
+                        setIsOpen(false);
+                        setClicked(null);
+                      }
+                    }}
+                  >
+                    {name}
+                  </Link>
+
                   {hasSubMenu && (
                     <ChevronDown
-                      className={`ml-auto ${isClicked && "rotate-180"} `}
+                      className={`ml-auto transition-transform duration-300 ${
+                        isClicked ? "rotate-180" : ""
+                      }`}
                     />
                   )}
-                </Link>
+                </div>
+
                 {hasSubMenu && (
                   <motion.ul
                     initial="exit"
                     animate={isClicked ? "enter" : "exit"}
                     variants={subMenuDrawer}
-                    className="ml-5"
+                    className="ml-5 overflow-hidden"
                   >
                     {subMenu.map(({ name, path }) => (
                       <li
                         key={name}
                         className="p-2 flex-center hover:bg-white/5 rounded-md gap-x-2 cursor-pointer border-t border-black/20"
+                        onClick={() => {
+                          setIsOpen(false);
+                          setClicked(null);
+                        }}
                       >
                         <Link to={path}>{name}</Link>
                       </li>
