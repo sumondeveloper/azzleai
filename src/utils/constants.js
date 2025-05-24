@@ -743,3 +743,45 @@ export const recentPosts = [
   },
 ];
 export const tags = ["Article", "Business", "Digital", "Technology", "UI/UX"];
+export const faqsData = [
+  {
+    question: "What is Artificial Intelligence (AI)?",
+    answer:
+      "AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.",
+  },
+  {
+    question: "What are the different types of AI?",
+    answer:
+      "AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.",
+  },
+  {
+    question: "What are some practical applications of AI?",
+    answer:
+      "AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.",
+  },
+  {
+    question: "What is the difference between AI and machine learning?",
+    answer:
+      "AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.",
+  },
+  {
+    question: "How can businesses use AI for competitive advantage?",
+    answer:
+      "AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.",
+  },
+  {
+    question: "Can AI replace humans in the workforce?",
+    answer:
+      "AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.",
+  },
+  {
+    question: "Is AI safe?",
+    answer:
+      "AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.",
+  },
+  {
+    question: "What is the future of AI?",
+    answer:
+      "AI refers to the simulation of human intelligence in machines, enabling them to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.",
+  },
+];
