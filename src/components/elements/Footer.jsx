@@ -7,7 +7,7 @@ import { footerUtilitiesPages } from "../../utils/constants";
 
 const Footer = () => {
   return (
-    <footer className="relative z-[1] -mt-[70px] overflow-hidden rounded-tl-[30px] rounded-tr-[30px] bg-[#F5F3EE] lg:rounded-tl-[50px] lg:rounded-tr-[50px]">
+    <footer className="relative z-[1] -mt-[100px] overflow-hidden rounded-tl-[30px] rounded-tr-[35px] bg-[#F5F3EE] lg:rounded-tl-[50px] lg:rounded-tr-[38px]">
       {/* Footer top */}
       <FooterTop />
 

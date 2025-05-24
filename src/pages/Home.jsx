@@ -10,7 +10,7 @@ const Home = () => {
       <HeroSection />
       <Features />
       <AudienceSection />
-      <VideoPlayer />
+      <VideoPlayer isGradient={true} />
       <PricingSection />
       <TestimonialSection />
     </>
