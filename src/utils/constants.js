@@ -17,6 +17,24 @@ import ManThree from "../assets/images/man3.webp";
 import ManFour from "../assets/images/man4.webp";
 import ManFive from "../assets/images/man5.webp";
 import ManSix from "../assets/images/man6.webp";
+import CoreValueIcon1 from "../assets/icons/core-value-icon-1.svg";
+import CoreValueIcon2 from "../assets/icons/core-value-icon-2.svg";
+import CoreValueIcon3 from "../assets/icons/core-value-icon-3.svg";
+import CoreValueIcon4 from "../assets/icons/core-value-icon-4.svg";
+import Member1 from "../assets/images/team-member-img-1.jpg";
+import Member2 from "../assets/images/team-member-img-2.jpg";
+import Member3 from "../assets/images/team-member-img-3.jpg";
+import Member4 from "../assets/images/team-member-img-4.jpg";
+import Member5 from "../assets/images/team-member-img-5.jpg";
+import Member6 from "../assets/images/team-member-img-6.jpg";
+import FacebookIconWhite from "../assets/icons/facebook-icon-white.svg";
+import FacebookIconBlack from "../assets/icons/facebook-icon-black.svg";
+import InstagramIconWhite from "../assets/icons/instagram-icon-white.svg";
+import InstagramIconBlack from "../assets/icons/instagram-icon-black.svg";
+import TwitterIconWhite from "../assets/icons/twitter-icon-white.svg";
+import TwitterIconBlack from "../assets/icons/twitter-icon-black.svg";
+import LinkdienIconWhite from "../assets/icons/linkedin-icon-white.svg";
+import LinkdienIconBlack from "../assets/icons/linkedin-icon-black.svg";
 
 export const Menus = [
   {
@@ -240,5 +258,216 @@ export const footerUtilitiesPages = [
   {
     page: "Password Reset",
     path: "/reset",
+  },
+];
+export const coreValues = [
+  {
+    icon: CoreValueIcon1,
+    title: "Innovation",
+    description: "We’re committed to exploring new technologies, and finding",
+  },
+  {
+    icon: CoreValueIcon2,
+    title: "Excellence",
+    description: "We set high standards for our work & we are dedicated team",
+  },
+  {
+    icon: CoreValueIcon3,
+    title: "Collaboration",
+    description: "We believe in the power of collaboration, working closely",
+  },
+  {
+    icon: CoreValueIcon4,
+    title: "Integrity",
+    description:
+      "We uphold the highest ethical honesty in all our interactions",
+  },
+];
+export const teamMembers = [
+  {
+    name: "Mr. Abraham Maslo",
+    designation: "Chief AI Officer",
+    image: Member1,
+    socials: [
+      {
+        name: "facebook",
+        link: "http://www.facebook.com",
+        iconWhite: FacebookIconWhite,
+        iconBlack: FacebookIconBlack,
+      },
+      {
+        name: "twitter",
+        link: "http://www.twitter.com",
+        iconWhite: TwitterIconWhite,
+        iconBlack: TwitterIconBlack,
+      },
+      {
+        name: "linkedin",
+        link: "http://www.linkedin.com",
+        iconWhite: LinkdienIconWhite,
+        iconBlack: LinkdienIconBlack,
+      },
+      {
+        name: "instagram",
+        link: "http://www.instagram.com",
+        iconWhite: InstagramIconWhite,
+        iconBlack: InstagramIconBlack,
+      },
+    ],
+  },
+  {
+    name: "Willium Robert",
+    designation: "Data Engineer",
+    image: Member2,
+    socials: [
+      {
+        name: "facebook",
+        link: "http://www.facebook.com",
+        iconWhite: FacebookIconWhite,
+        iconBlack: FacebookIconBlack,
+      },
+      {
+        name: "twitter",
+        link: "http://www.twitter.com",
+        iconWhite: TwitterIconWhite,
+        iconBlack: TwitterIconBlack,
+      },
+      {
+        name: "linkedin",
+        link: "http://www.linkedin.com",
+        iconWhite: LinkdienIconWhite,
+        iconBlack: LinkdienIconBlack,
+      },
+      {
+        name: "instagram",
+        link: "http://www.instagram.com",
+        iconWhite: InstagramIconWhite,
+        iconBlack: InstagramIconBlack,
+      },
+    ],
+  },
+  {
+    name: "Mr. Max D. Nikolas",
+    designation: "CEO, Co-founder",
+    image: Member3,
+    socials: [
+      {
+        name: "facebook",
+        link: "http://www.facebook.com",
+        iconWhite: FacebookIconWhite,
+        iconBlack: FacebookIconBlack,
+      },
+      {
+        name: "twitter",
+        link: "http://www.twitter.com",
+        iconWhite: TwitterIconWhite,
+        iconBlack: TwitterIconBlack,
+      },
+      {
+        name: "linkedin",
+        link: "http://www.linkedin.com",
+        iconWhite: LinkdienIconWhite,
+        iconBlack: LinkdienIconBlack,
+      },
+      {
+        name: "instagram",
+        link: "http://www.instagram.com",
+        iconWhite: InstagramIconWhite,
+        iconBlack: InstagramIconBlack,
+      },
+    ],
+  },
+  {
+    name: "Henry Fayol",
+    designation: "AI Researchers",
+    image: Member4,
+    socials: [
+      {
+        name: "facebook",
+        link: "http://www.facebook.com",
+        iconWhite: FacebookIconWhite,
+        iconBlack: FacebookIconBlack,
+      },
+      {
+        name: "twitter",
+        link: "http://www.twitter.com",
+        iconWhite: TwitterIconWhite,
+        iconBlack: TwitterIconBlack,
+      },
+      {
+        name: "linkedin",
+        link: "http://www.linkedin.com",
+        iconWhite: LinkdienIconWhite,
+        iconBlack: LinkdienIconBlack,
+      },
+      {
+        name: "instagram",
+        link: "http://www.instagram.com",
+        iconWhite: InstagramIconWhite,
+        iconBlack: InstagramIconBlack,
+      },
+    ],
+  },
+  {
+    name: "Jack Fox",
+    designation: "NLP Expert",
+    image: Member5,
+    socials: [
+      {
+        name: "facebook",
+        link: "http://www.facebook.com",
+        iconWhite: FacebookIconWhite,
+        iconBlack: FacebookIconBlack,
+      },
+      {
+        name: "twitter",
+        link: "http://www.twitter.com",
+        iconWhite: TwitterIconWhite,
+        iconBlack: TwitterIconBlack,
+      },
+      {
+        name: "linkedin",
+        link: "http://www.linkedin.com",
+        iconWhite: LinkdienIconWhite,
+        iconBlack: LinkdienIconBlack,
+      },
+      {
+        name: "instagram",
+        link: "http://www.instagram.com",
+        iconWhite: InstagramIconWhite,
+        iconBlack: InstagramIconBlack,
+      },
+    ],
+  },
+  {
+    name: "Adam Smith",
+    designation: "Project Manager",
+    image: Member6,
+    socials: [
+      {
+        name: "facebook",
+        link: "http://www.facebook.com",
+        iconWhite: FacebookIconWhite,
+        iconBlack: FacebookIconBlack,
+      },
+      {
+        name: "twitter",
+        link: "http://www.twitter.com",
+        iconWhite: TwitterIconWhite,
+        iconBlack: TwitterIconBlack,
+      },
+      {
+        name: "linkedin",
+        link: "http://www.linkedin.com",
+        iconWhite: LinkdienIconWhite,
+        iconBlack: LinkdienIconBlack,
+      },
+      {
+        name: "instagram",
+        link: "http://www.instagram.com",
+        iconWhite: InstagramIconWhite,
+        iconBlack: InstagramIconBlack,
+      },
+    ],
   },
 ];
