@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import PageNavbar from "../components/shared/PageNavbar";
 import { faqsData } from "../utils/constants";
 import PlusIcon from "../assets/icons/plus.svg";
