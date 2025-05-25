@@ -10,14 +10,13 @@ const AudienceSection = () => {
       <MaxWidthWrapper>
         {/* Top Section */}
 
-        <div className="flex flex-col justify-between sm:flex-row items-center lg:gap-30 sm:gap-8">
-          <AnimatonVariants
-            animation="fade-right"
-            delay={0.7}
-            duration={0.7}
-            className="mt-10 lg:w-[100%] h-auto sm:w-[50%]"
-          >
-            <img src={ContentImageOne} alt="" className="w-full h-auto" />
+        <div className="flex flex-col justify-between sm:flex-row items-center lg:gap-30 sm:gap-20">
+          <AnimatonVariants animation="fade-right" delay={0.7} duration={0.7}>
+            <img
+              src={ContentImageOne}
+              alt=""
+              className="lg:w-[1000px] sm:w-[1400px] h-auto object-cover"
+            />
           </AnimatonVariants>
 
           <AnimatonVariants
@@ -45,7 +44,7 @@ const AudienceSection = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-15 flex flex-col sm:flex-row sm:justify-between items-center sm:mt-20 sm:gap-8 lg:gap-25">
+        <div className="mt-15 flex flex-col sm:flex-row sm:justify-between items-center sm:mt-20 sm:gap-8 lg:gap-30">
           <AnimatonVariants animation="fade-left" delay={0.5} duration={0.7}>
             <div>
               <h2 className="text-[36px] font-secondary font-semibold leading-[40px] tracking-tight lg:text-[80px] lg:leading-[80px] lg:tracking-normal sm:font-bold sm:leading-10 ">
