@@ -7,7 +7,7 @@ import Button from "../components/shared/Button";
 const Login = () => {
   return (
     <section id="login-section">
-      <div className="lg:pt-20 pb-20 xl:pb-[200px] pt-15 ">
+      <div className="lg:pt-20 pb-20 lg:mb-20 sm:mb-40  xl:pb-[200px] pt-15 mb-40 ">
         <MaxWidthWrapper>
           <div className="mx-auto max-w-[910px] text-center">
             <h1 className="mb-[50px] text-[48px] font-extrabold  font-secondary sm:text-[60px] lg:text-[120px] lg:leading-[120px]">
