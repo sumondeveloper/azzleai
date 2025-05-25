@@ -26,7 +26,7 @@ const AudienceSection = () => {
             className=""
           >
             <div>
-              <h2 className="text-[36px] font-secondary font-semibold leading-[40px] tracking-tight lg:text-[80px] lg:leading-[80px] lg:tracking-normal sm:font-bold sm:leading-10">
+              <h2 className="text-[36px] font-secondary font-semibold leading-[40px] tracking-tight lg:text-[80px] lg:leading-[80px] lg:tracking-normal sm:font-bold sm:leading-10 mt-10 mb-5">
                 Accessible to a wider audience
               </h2>
               <p className="font-primary text-base lg:text-lg mt-4">
