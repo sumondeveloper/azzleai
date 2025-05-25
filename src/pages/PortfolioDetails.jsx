@@ -23,7 +23,7 @@ const PortfolioDetails = () => {
 
   return (
     <>
-      <PageNavbar pages="Portfolio Single" page="Portfolio Single" />
+      <PageNavbar pages="Portfolio Details" page={project.title} />
 
       <section className="pb-20 xl:pb-[150px]">
         <MaxWidthWrapper>
