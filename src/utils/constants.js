@@ -49,6 +49,12 @@ import RecentBlogOne from "../assets/images/blog-recent1.jpg";
 import RecentBlogTwo from "../assets/images/blog-recent-img2.jpg";
 
 import RecentBlogThree from "../assets/images/blog-recent-img3.jpg";
+import PortfolioImage1 from "../assets/images/portfolio-img-1.jpg";
+import PortfolioImage2 from "../assets/images/portfolio-img-2.jpg";
+import PortfolioImage3 from "../assets/images/portfolio-img-3.jpg";
+import PortfolioImage4 from "../assets/images/portfolio-img-4.jpg";
+import PortfolioImage5 from "../assets/images/portfolio-img-5.jpg";
+import PortfolioImage6 from "../assets/images/portfolio-img-6.jpg";
 
 export const Menus = [
   {
@@ -1065,5 +1071,135 @@ export const PricingannuallyPlans = [
       "Time Series Models",
       "Clustering models",
     ],
+  },
+];
+// src/utils/constants.js
+
+export const portfolioItems = [
+  {
+    id: "nlp-model",
+    img: PortfolioImage1,
+    title: "Natural language processing models to extract insights",
+    client: "AI Insights Ltd.",
+    services: "NLP Model Development",
+    duration: "4 Weeks",
+    website: "https://example.com/nlp-model",
+    overviewTitle: "Overview",
+    overviewPoints: [
+      "Built transformer-based NLP models to extract meaningful insights.",
+      "Integrated named entity recognition (NER) and sentiment analysis modules.",
+    ],
+    resultTitle: "Results",
+    resultPoints: [
+      "Reduced manual text analysis time by 75%.",
+      "Increased accuracy of data interpretation by 40%.",
+    ],
+    // img1: PortfolioImage2,
+    // img2: PortfolioImage3,
+  },
+  {
+    id: "ai-edu-platform",
+    img: PortfolioImage2,
+    title: "Create a modern AI-powered educational platform",
+    client: "Smart Learn",
+    services: "AI Integration, Platform Development",
+    duration: "1 Month",
+    website: "https://example.com/edu-platform",
+    overviewTitle: "Overview",
+    overviewPoints: [
+      "Developed personalized learning experience using GPT-based AI.",
+      "Added real-time quiz and evaluation system with ML analytics.",
+    ],
+    resultTitle: "Results",
+    resultPoints: [
+      "Student engagement increased by 60%.",
+      "Reduced drop-out rate by 30% in pilot schools.",
+    ],
+    // img1: PortfolioImage4,
+    // img2: PortfolioImage5,
+  },
+  {
+    id: "ai-content-gen",
+    img: PortfolioImage3,
+    title: "Develop a content generation system that uses AI system",
+    client: "ContentGen AI",
+    services: "Custom AI System",
+    duration: "3 Weeks",
+    website: "https://example.com/content-ai",
+    overviewTitle: "Overview",
+    overviewPoints: [
+      "Integrated OpenAI API for dynamic content creation.",
+      "Built UI for clients to customize tone, length, and target audience.",
+    ],
+    resultTitle: "Results",
+    resultPoints: [
+      "Generated 10x more content in half the time.",
+      "Client engagement increased by 50%.",
+    ],
+    // img1: PortfolioImage1,
+    // img2: PortfolioImage6,
+  },
+  {
+    id: "predictive-maintenance",
+    img: PortfolioImage4,
+    title: "Implement a predictive maintenance system with AI",
+    client: "MechaTech",
+    services: "AI + IoT",
+    duration: "5 Weeks",
+    website: "https://example.com/predictive-ai",
+    overviewTitle: "Overview",
+    overviewPoints: [
+      "Used sensor data to train models for equipment failure prediction.",
+      "Integrated dashboards for real-time alerts and reports.",
+    ],
+    resultTitle: "Results",
+    resultPoints: [
+      "Reduced machine downtime by 40%.",
+      "Saved approx $200K/year in maintenance costs.",
+    ],
+    // img1: PortfolioImage2,
+    // img2: PortfolioImage5,
+  },
+  {
+    id: "precision-agriculture",
+    img: PortfolioImage5,
+    title: "Build an AI solution for precision agriculture",
+    client: "AgroAI",
+    services: "AI for Agriculture",
+    duration: "6 Weeks",
+    website: "https://example.com/agro-ai",
+    overviewTitle: "Overview",
+    overviewPoints: [
+      "Developed AI model for crop disease detection using drone imagery.",
+      "Built dashboard for farmers to monitor field health.",
+    ],
+    resultTitle: "Results",
+    resultPoints: [
+      "Increased crop yield by 20%.",
+      "Early disease detection reduced losses by 35%.",
+    ],
+    // img1: PortfolioImage3,
+    // img2: PortfolioImage1,
+  },
+  {
+    id: "ai-enterprise",
+    img: PortfolioImage6,
+    title: "AI for large corporations and businesses across industries",
+    client: "GlobalTech Enterprises",
+    services: "Enterprise AI Solutions",
+    duration: "2 Months",
+    website: "https://example.com/enterprise-ai",
+    overviewTitle: "Overview",
+    overviewPoints: [
+      "Developed scalable AI systems for enterprise automation.",
+      "Included document analysis, smart assistants, and data prediction models.",
+    ],
+    resultTitle: "Results",
+    resultPoints: [
+      "Automated 50% of manual processes.",
+      "Improved operational efficiency by 45%.",
+    ],
+    // img1: PortfolioImage5,
+    // img2: PortfolioImage4,
   },
 ];

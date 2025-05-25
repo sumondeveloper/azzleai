@@ -14,6 +14,7 @@ import Faq from "./pages/Faq";
 
 import Faq2 from "./pages/Faq2";
 import Pricing from "./pages/Pricing";
+import Portfolio from "./pages/Portfolio";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/faq-1" element={<Faq />} />
           <Route path="/faq-2" element={<Faq2 />} />
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/portfolio" element={<Portfolio />} />
 
           {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
