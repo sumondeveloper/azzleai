@@ -1204,6 +1204,9 @@ export const portfolioItems = [
     img2: PorfolioDetails2Image,
   },
 ];
+
+//animation
+
 // fadeUpVariant.js
 export const fadeUpVariant = {
   hidden: { opacity: 0, y: 50 },
@@ -1216,4 +1219,15 @@ export const fadeUpVariant = {
       ease: "easeOut",
     },
   }),
+};
+export const fadeUp = {
+  hidden: { opacity: 0, y: 40 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  },
 };

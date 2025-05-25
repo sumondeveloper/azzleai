@@ -8,6 +8,7 @@ import VideoPlayer from "../components/sections/VideoPlayer";
 import AutomotinIcon from "../assets/icons/icon-orange-cursor-click.svg";
 import ClockIcon from "../assets/icons/icon-orange-clock.svg";
 import AboutContact from "../components/sections/AboutContact";
+import { motion } from "motion/react";
 
 const ServiceDetails = () => {
   return (
@@ -67,15 +68,39 @@ const ServiceDetails = () => {
             </div>
             {/* middle row */}
             <div className="mt-20 lg:mt-30">
-              <div className="sm:max-w-sm mx-auto lg:max-w-5xl">
-                <h2 className="text-[36px] font-bold text-primary leading-10 font-secondary tracking-tight lg:text-[80px] lg:leading-[80px] text-center">
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.5, ease: "easeInOut" }}
+                viewport={{ once: true }}
+                className="sm:max-w-sm mx-auto lg:max-w-5xl text-center"
+              >
+                <h2 className="text-[36px] font-bold text-primary leading-10 font-secondary tracking-tight lg:text-[80px] lg:leading-[80px]">
                   Widely used throughout the industry for work
                 </h2>
-              </div>
-              <div className="mt-20 flex flex-col gap-12 sm:flex-row-reverse items-center lg:gap-30">
-                <div>
+              </motion.div>
+
+              <div className="mt-20 flex flex-col gap-12 sm:flex-row items-center lg:gap-30">
+                <motion.img
+                  initial={{ opacity: 0, x: 100 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.7, delay: 0.5, ease: "easeInOut" }}
+                  viewport={{ once: true }}
+                  src={ContentImageTwo}
+                  alt=""
+                  width="526"
+                  height="450"
+                  className="sm:h-[50%] sm:w-[50%] w-full mt-1"
+                />
+
+                <motion.div
+                  initial={{ opacity: 0, x: -100 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.7, delay: 0.5, ease: "easeInOut" }}
+                  viewport={{ once: true }}
+                >
                   <div className="flex flex-col gap-8 mt-10">
-                    <div className="">
+                    <div>
                       <h2 className="text-2xl sm:text-xl font-secondary font-bold tracking-tighter lg:text-2xl">
                         1. Businesses and Corporations:
                       </h2>
@@ -86,18 +111,18 @@ const ServiceDetails = () => {
                         finance, manufacturing.
                       </p>
                     </div>
-                    <div className="">
+                    <div>
                       <h2 className="text-2xl sm:text-xl font-secondary font-bold tracking-tighter lg:text-2xl">
                         2. Data Scientists and Analysts:
                       </h2>
-                      <p className="text-lg mt-2 font-primary ">
+                      <p className="text-lg mt-2 font-primary">
                         Data scientists and analysts leverage AI tools and
                         algorithms to extract actionable insights from large
-                        datasets. They alsouse AI for predictive modeling,
+                        datasets. They also use AI for predictive modeling,
                         anomaly detection, and data visualization.
                       </p>
                     </div>
-                    <div className="">
+                    <div>
                       <h2 className="text-2xl font-secondary font-bold tracking-tighter sm:text-xl lg:text-2xl">
                         3. Government and Public Sector:
                       </h2>
@@ -108,14 +133,7 @@ const ServiceDetails = () => {
                       </p>
                     </div>
                   </div>
-                </div>
-                <img
-                  src={ContentImageTwo}
-                  alt=""
-                  width="526"
-                  height="450"
-                  className="sm:h-[50%] sm:w-[50%] w-full"
-                />
+                </motion.div>
               </div>
             </div>
           </div>
@@ -124,7 +142,13 @@ const ServiceDetails = () => {
           <VideoPlayer isGradient={false} />
           <MaxWidthWrapper>
             {/* bottom row */}
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-10 lg:gap-20">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.5, ease: "easeInOut" }}
+              viewport={{ once: true }}
+              className="flex flex-col sm:flex-row items-center justify-between gap-10 lg:gap-20"
+            >
               <div>
                 <h1 className="text-[36px] font-bold text-primary leading-10 font-secondary tracking-tight lg:text-[80px] lg:leading-[90px]">
                   Manage large amounts of data
@@ -171,14 +195,18 @@ const ServiceDetails = () => {
                   </div>
                 </div>
               </div>
-              <img
-                src={ContentImageOne}
+              <motion.img
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.7, delay: 0.7, ease: "easeInOut" }}
+                viewport={{ once: true }}
+                src={ContentImageTwo}
                 alt=""
                 width="526"
                 height="450"
-                className="sm:h-[50%] sm:w-[50%] w-full"
+                className="sm:h-[50%] sm:w-[50%] w-full mt-1"
               />
-            </div>
+            </motion.div>
           </MaxWidthWrapper>
           <AboutContact />
         </div>
