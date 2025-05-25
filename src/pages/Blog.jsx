@@ -1,4 +1,5 @@
 import BlogCard from "../components/cards/BlogCard";
+
 import BlogSidebar from "../components/shared/BlogSidebar";
 import MaxWidthWrapper from "../components/shared/MaxWidthWrapper";
 import PageNavbar from "../components/shared/PageNavbar";
@@ -9,11 +10,12 @@ const Blog = () => {
   return (
     <>
       <PageNavbar pages="Our Blog" page="Our Blog" />
-      <section className="blog-section py-20 mb-30 xl:py-[120px]">
+      <section className="py-20 mb-30 xl:py-[120px]">
         <MaxWidthWrapper>
-          <div className="grid grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-[2fr_1fr]">
+          <div className="grid grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-[2fr_1fr] lg:-mt-10">
             {/* Blog Posts */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:-mt-5">
               {blogs.map((post) => (
                 <BlogCard key={post.id} post={post} />
               ))}
