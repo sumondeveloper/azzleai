@@ -41,7 +41,7 @@ const Portfolio = () => {
           <ul className="col-1 gap-6 md:columns-2">
             {portfolioItems.map((item, index) => (
               <motion.li
-                key={index}
+                key={item.id}
                 className="group mb-10 flex flex-col gap-y-6 last:mb-0"
                 variants={fadeUpVariant}
                 initial="hidden"
@@ -50,7 +50,7 @@ const Portfolio = () => {
                 custom={index}
               >
                 <Link
-                  to="/portfolio-details"
+                  to={`/portfolio/${item.id}`}
                   className={`block w-full overflow-hidden rounded-[10px] ${
                     index % 2 === 0 ? "h-80 lg:h-[550px]" : "h-96 lg:h-[750px]"
                   }`}
@@ -65,7 +65,7 @@ const Portfolio = () => {
                 </Link>
 
                 <Link
-                  to="/portfolio-details"
+                  to={`/portfolio/${item.id}`}
                   className="flex items-center justify-between gap-x-6 text-xl font-bold leading-[1.4] hover:text-red-500 lg:gap-x-14 lg:text-2xl xl:gap-x-20 xl:text-3xl"
                 >
                   <span className="flex-1 text-xl tracking-tight font-extrabold text-primary font-primary lg:text-3xl hover:text-red-500">

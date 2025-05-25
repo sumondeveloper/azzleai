@@ -55,6 +55,8 @@ import PortfolioImage3 from "../assets/images/portfolio-img-3.jpg";
 import PortfolioImage4 from "../assets/images/portfolio-img-4.jpg";
 import PortfolioImage5 from "../assets/images/portfolio-img-5.jpg";
 import PortfolioImage6 from "../assets/images/portfolio-img-6.jpg";
+import PorfolioDetails1Image from "../assets/images/portfolio-img-details1.jpg";
+import PorfolioDetails2Image from "../assets/images/portfolio-img-details2.jpg";
 
 export const Menus = [
   {
@@ -134,7 +136,7 @@ export const Menus = [
           },
           {
             name: "Portfolio Details",
-            path: "/portfoliodetails",
+            path: "/portfolio/nlp-model",
           },
         ],
       },
@@ -1073,29 +1075,28 @@ export const PricingannuallyPlans = [
     ],
   },
 ];
-// src/utils/constants.js
 
 export const portfolioItems = [
   {
     id: "nlp-model",
     img: PortfolioImage1,
-    title: "Natural language processing models to extract insights",
-    client: "AI Insights Ltd.",
-    services: "NLP Model Development",
-    duration: "4 Weeks",
+    title: "Natural language processing models",
+    client: "XYZ Company",
+    services: "Web Design",
+    duration: "2 Weeks",
     website: "https://example.com/nlp-model",
-    overviewTitle: "Overview",
+    overviewTitle: "Machine Learning and Predictive Analytics:",
     overviewPoints: [
-      "Built transformer-based NLP models to extract meaningful insights.",
-      "Integrated named entity recognition (NER) and sentiment analysis modules.",
+      "Demand Forecasting: AI SaaS helps businesses predict demand for products and services, optimizing inventory management and supply chain operations.",
+      "Customer Churn Prediction: It's used to identify customers at risk of leaving a service or product, allowing proactive retention efforts.",
     ],
-    resultTitle: "Results",
+    resultTitle: "Natural Language Processing (NLP):",
     resultPoints: [
-      "Reduced manual text analysis time by 75%.",
-      "Increased accuracy of data interpretation by 40%.",
+      "Text Analysis: AI SaaS can be used to analyze text data for sentiment analysis, entity recognition, language translation, and text summarization.",
+      "Chatbots and Virtual Assistants: Businesses use AI SaaS to build chatbots and virtual assistants for customer support, improving response times and efficiency.",
     ],
-    // img1: PortfolioImage2,
-    // img2: PortfolioImage3,
+    img1: PorfolioDetails1Image,
+    img2: PorfolioDetails2Image,
   },
   {
     id: "ai-edu-platform",
@@ -1115,8 +1116,8 @@ export const portfolioItems = [
       "Student engagement increased by 60%.",
       "Reduced drop-out rate by 30% in pilot schools.",
     ],
-    // img1: PortfolioImage4,
-    // img2: PortfolioImage5,
+    img1: PorfolioDetails1Image,
+    img2: PorfolioDetails2Image,
   },
   {
     id: "ai-content-gen",
@@ -1136,8 +1137,8 @@ export const portfolioItems = [
       "Generated 10x more content in half the time.",
       "Client engagement increased by 50%.",
     ],
-    // img1: PortfolioImage1,
-    // img2: PortfolioImage6,
+    img1: PorfolioDetails1Image,
+    img2: PorfolioDetails2Image,
   },
   {
     id: "predictive-maintenance",
@@ -1157,8 +1158,8 @@ export const portfolioItems = [
       "Reduced machine downtime by 40%.",
       "Saved approx $200K/year in maintenance costs.",
     ],
-    // img1: PortfolioImage2,
-    // img2: PortfolioImage5,
+    img1: PorfolioDetails1Image,
+    img2: PorfolioDetails2Image,
   },
   {
     id: "precision-agriculture",
@@ -1178,8 +1179,8 @@ export const portfolioItems = [
       "Increased crop yield by 20%.",
       "Early disease detection reduced losses by 35%.",
     ],
-    // img1: PortfolioImage3,
-    // img2: PortfolioImage1,
+    img1: PorfolioDetails1Image,
+    img2: PorfolioDetails2Image,
   },
   {
     id: "ai-enterprise",
@@ -1199,7 +1200,7 @@ export const portfolioItems = [
       "Automated 50% of manual processes.",
       "Improved operational efficiency by 45%.",
     ],
-    // img1: PortfolioImage5,
-    // img2: PortfolioImage4,
+    img1: PorfolioDetails1Image,
+    img2: PorfolioDetails2Image,
   },
 ];
