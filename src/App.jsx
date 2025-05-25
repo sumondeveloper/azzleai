@@ -16,6 +16,8 @@ import Faq2 from "./pages/Faq2";
 import Pricing from "./pages/Pricing";
 import Portfolio from "./pages/Portfolio";
 import PortfolioDetails from "./pages/PortfolioDetails";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 function App() {
   return (
@@ -38,9 +40,11 @@ function App() {
           <Route path="/portfolio/:id" element={<PortfolioDetails />} />
 
           {/* <Route path="*" element={<NotFound />} /> */}
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
 
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   );

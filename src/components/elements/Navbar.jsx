@@ -4,11 +4,18 @@ import { Menus } from "../../utils/constants";
 import DesktopMenu from "../shared/DesktopMenu";
 import MobMenu from "../shared/MobMenu";
 import Button from "../shared/Button";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const location = useLocation();
+  const isLoginPage = location.pathname === "/login"; // login route check
+
   return (
-    <header className="py-3 md:py-10 bg-[#efeae3] z-50 relative text-primary">
+    <header
+      className={`py-3 md:py-8 z-50 relative text-primary transition-colors duration-300 ${
+        isLoginPage ? "bg-white" : "bg-[#efeae3]"
+      }`}
+    >
       <MaxWidthWrapper className="px-10">
         <div className="flex justify-between items-center">
           <Link to="/">
@@ -16,14 +23,12 @@ const Navbar = () => {
           </Link>
 
           <ul className="lg:flex items-center hidden gap-8">
-            {/* menus */}
-            {/* desktop menus */}
-
             {Menus.map((menu) => (
               <DesktopMenu menu={menu} key={menu.name} />
             ))}
           </ul>
-          <div className="hidden lg:flex items-center gap-x-5 ">
+
+          <div className="hidden lg:flex items-center gap-x-5">
             <Link to="/login">
               <Button>Login</Button>
             </Link>
@@ -31,6 +36,7 @@ const Navbar = () => {
               <Button className="bg-black text-white py-3">Sign up free</Button>
             </Link>
           </div>
+
           <div className="lg:hidden">
             <MobMenu Menus={Menus} />
           </div>
@@ -39,4 +45,5 @@ const Navbar = () => {
     </header>
   );
 };
+
 export default Navbar;
