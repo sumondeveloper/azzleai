@@ -8,12 +8,15 @@ import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const location = useLocation();
-  const isLoginPage = location.pathname === "/login"; // login route check
+  const isLoginPage = location.pathname === "/login";
+  const isSignUpPage = location.pathname === "/signup";
+
+  const isAuthPage = isLoginPage || isSignUpPage;
 
   return (
     <header
       className={`py-3 md:py-8 z-50 relative text-primary transition-colors duration-300 ${
-        isLoginPage ? "bg-white" : "bg-[#efeae3]"
+        isAuthPage ? "bg-white" : "bg-[#efeae3]"
       }`}
     >
       <MaxWidthWrapper className="px-10">

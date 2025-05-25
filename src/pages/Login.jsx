@@ -6,7 +6,7 @@ import Button from "../components/shared/Button";
 
 const Login = () => {
   return (
-    <section id="login-section">
+    <section>
       <div className="lg:pt-20 pb-20 lg:mb-20 sm:mb-40  xl:pb-[200px] pt-15 mb-40 ">
         <MaxWidthWrapper>
           <div className="mx-auto max-w-[910px] text-center">
@@ -24,6 +24,7 @@ const Login = () => {
                       Email address
                     </label>
                     <input
+                      required
                       type="email"
                       name="email"
                       id="login-email"
@@ -39,6 +40,7 @@ const Login = () => {
                       Enter Password
                     </label>
                     <input
+                      required
                       type="password"
                       name="password"
                       id="login-password"
@@ -49,6 +51,7 @@ const Login = () => {
                   <div className="flex flex-wrap justify-between gap-x-10 gap-y-4">
                     <div className="flex items-center gap-3">
                       <input
+                        required
                         type="checkbox"
                         className="w-4 h-4 bg-red-500 border border-gray-300 rounded "
                       />
