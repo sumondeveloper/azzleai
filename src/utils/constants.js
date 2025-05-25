@@ -100,21 +100,21 @@ export const Menus = [
       },
       {
         name: "Team",
-        path: "/team",
+        path: "/",
         subMenu: [
           {
             name: "Team",
-            path: "/team",
+            path: "/",
           },
           {
             name: "Team Details",
-            path: "/teamdetails",
+            path: "/",
           },
         ],
       },
       {
         name: "FAQ",
-        path: "/faq-1",
+        path: "/faq",
         subMenu: [
           {
             name: "FAQ-1",
@@ -141,12 +141,8 @@ export const Menus = [
         ],
       },
       {
-        name: "Pricing",
-        path: "/pricing",
-      },
-      {
         name: "Utilities",
-        path: "/utilities",
+        path: "/utiilities",
         subMenu: [
           {
             name: "Error 404",
@@ -161,11 +157,12 @@ export const Menus = [
             path: "/signup",
           },
           {
-            name: "Login",
-            path: "/login",
+            name: "Reset Password",
+            path: "/reset",
           },
         ],
       },
+      // ...other items
     ],
     gridCols: 2,
   },

@@ -25,7 +25,7 @@ const Navbar = () => {
             <img src={Logo} alt="logo" width={96} height={24} />
           </Link>
 
-          <ul className="lg:flex items-center hidden gap-8">
+          <ul className="lg:flex items-center hidden gap-4">
             {Menus.map((menu) => (
               <DesktopMenu menu={menu} key={menu.name} />
             ))}

@@ -34,12 +34,12 @@ const DesktopMenu = ({ menu }) => {
       <Link
         to={menu.path || "#"}
         onClick={closeHoverMenu}
-        className="flex items-center gap-1 px-4 py-2 font-semibold hover:bg-gray-100 rounded-md transition-all duration-200"
+        className="flex items-center gap-1 px-4 py-2 font-semibold rounded-md transition-all duration-200 font-primary"
       >
         {menu.name}
         {hasSubMenu && (
           <ChevronDown
-            className="mt-[1px] transition-transform group-hover/link:rotate-180"
+            className="mt-[1px] transition-transform group-hover/link:rotate-270"
             size={18}
           />
         )}
@@ -49,7 +49,11 @@ const DesktopMenu = ({ menu }) => {
         <motion.div
           className={`absolute top-full left-0 z-50 bg-white shadow-xl rounded-lg mt-3 px-4 py-3 grid grid-cols-${
             menu.gridCols || 1
-          } gap-4 min-w-[200px] border border-gray-200`}
+          } gap-4 min-w-[200px] border border-gray-200 
+          before:content-[''] before:absolute before:top-[-12px] before:left-[22px] 
+          before:w-0 before:h-0 before:border-l-[12px] before:border-r-[12px] 
+          before:border-b-[12px] before:border-l-transparent before:border-r-transparent 
+          before:border-b-white before:z-50`}
           initial="exit"
           animate={isHover ? "enter" : "exit"}
           variants={subMenuAnimate}
@@ -76,7 +80,7 @@ const NestedSubMenu = ({ item, closeAll }) => {
       <Link
         to={item.path || "#"}
         onClick={closeAll}
-        className="flex items-center justify-between text-gray-700 hover:text-red-500 font-medium px-2 py-1 rounded-md transition-all duration-200 whitespace-nowrap"
+        className="flex items-center justify-between text-primary hover:text-red-500 px-2 py-1 rounded-md transition-all duration-200 whitespace-nowrap font-secondary font-semibold"
       >
         {item.name}
         {hasSubMenu && <ChevronRight size={16} />}
