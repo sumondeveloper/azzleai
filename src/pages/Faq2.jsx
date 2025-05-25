@@ -4,6 +4,7 @@ import PageNavbar from "../components/shared/PageNavbar";
 import PlusIcon from "../assets/icons/plus.svg";
 import { faqData2 } from "../utils/constants";
 import AboutContact from "../components/sections/AboutContact";
+import AnimatonVariants from "../components/shared/AnimatonVariants";
 
 const tabs = [
   { id: "general-questions", label: "General questions" },
@@ -30,9 +31,11 @@ export default function Faq2() {
         <MaxWidthWrapper>
           <div className="mb-10 text-center lg:mb-16 xl:mb-20">
             <div className="mx-auto max-w-md lg:max-w-3xl xl:max-w-[950px]">
-              <h2 className="text-[36px] font-secondary leading-10 tracking-tight font-extrabold lg:text-[80px] lg:leading-[80px]">
-                Our experts are able to answer all your questions
-              </h2>
+              <AnimatonVariants>
+                <h2 className="text-[36px] font-secondary leading-10 tracking-tight font-extrabold lg:text-[80px] lg:leading-[80px] lg:-mt-10">
+                  Our experts are able to answer all your questions
+                </h2>
+              </AnimatonVariants>
             </div>
           </div>
 
@@ -59,39 +62,40 @@ export default function Faq2() {
 
             {/* FAQ Accordion */}
             <div>
-              <ul className="accordion tab-content flex flex-col gap-y-6">
+              <ul className="sflex flex-col gap-y-6">
                 {(faqData2[activeTab] || []).map((questionItem, index) => (
-                  <li
-                    key={index}
-                    className={`accordion-item is-2 rounded-[10px] border-[1px] border-[#EAEDF0] bg-white px-7 py-[30px] ${
-                      openIndex === index ? "active" : ""
-                    }`}
-                  >
-                    <div
-                      className="accordion-header flex items-center justify-between text-xl leading-[1.2] -tracking-[0.5px] lg:text-[28px] cursor-pointer"
-                      onClick={() => handleAccordionToggle(index)}
+                  <AnimatonVariants key={index}>
+                    <li
+                      className={`accordion-item is-2 rounded-[10px] border-[1px] border-[#EAEDF0] bg-white px-7 py-[30px] ${
+                        openIndex === index ? "active" : ""
+                      }`}
                     >
-                      <div className="max-w-[250px] sm:max-w-3xl">
-                        <h5 className="text-2xl lg:text-[25px] font-bold tracking-tighter font-secondary">
-                          {questionItem.question}
-                        </h5>
+                      <div
+                        className="accordion-header flex items-center justify-between text-xl leading-[1.2] -tracking-[0.5px] lg:text-[28px] cursor-pointer"
+                        onClick={() => handleAccordionToggle(index)}
+                      >
+                        <div className="max-w-[250px] sm:max-w-3xl">
+                          <h5 className="text-2xl lg:text-[25px] font-bold tracking-tighter font-secondary">
+                            {questionItem.question}
+                          </h5>
+                        </div>
+                        <div className="accordion-icon">
+                          <img
+                            src={PlusIcon}
+                            alt="toggle"
+                            className={`w-6 h-6 transition-transform duration-300 ${
+                              openIndex === index ? "rotate-45" : ""
+                            }`}
+                          />
+                        </div>
                       </div>
-                      <div className="accordion-icon">
-                        <img
-                          src={PlusIcon}
-                          alt="toggle"
-                          className={`w-6 h-6 transition-transform duration-300 ${
-                            openIndex === index ? "rotate-45" : ""
-                          }`}
-                        />
-                      </div>
-                    </div>
-                    {openIndex === index && (
-                      <div className="accordion-content text-[#2C2C2C] mt-4 text-lg font-primary">
-                        <p>{questionItem.answer}</p>
-                      </div>
-                    )}
-                  </li>
+                      {openIndex === index && (
+                        <div className="accordion-content text-[#2C2C2C] mt-4 text-lg font-primary">
+                          <p>{questionItem.answer}</p>
+                        </div>
+                      )}
+                    </li>
+                  </AnimatonVariants>
                 ))}
               </ul>
             </div>

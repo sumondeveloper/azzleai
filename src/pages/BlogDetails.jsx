@@ -15,6 +15,7 @@ const BlogDetails = () => {
             <div className="grid grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-[2fr_1fr]">
               <div className="flex flex-col gap-y-10 lg:gap-y-14 xl:gap-y-20">
                 {/* Blog Article */}
+
                 <BlogArticle />
 
                 {/* Comment Section */}

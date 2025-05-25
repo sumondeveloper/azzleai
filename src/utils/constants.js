@@ -114,7 +114,7 @@ export const Menus = [
       },
       {
         name: "FAQ",
-        path: "/faq",
+        path: "/faq-1",
         subMenu: [
           {
             name: "FAQ-1",
