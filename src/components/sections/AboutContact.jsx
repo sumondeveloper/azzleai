@@ -5,7 +5,7 @@ import AnimatonVariants from "../shared/AnimatonVariants";
 
 const AboutContact = () => {
   return (
-    <div className="bg-black pb-40 pt-20 xl:pb-[200px] xl:pt-[130px]">
+    <div className="bg-black pb-40 pt-20 xl:pb-[200px] xl:pt-[130px] overflow-hidden">
       <MaxWidthWrapper>
         <div className="grid grid-cols-1 items-center gap-14 md:grid-cols-[minmax(0,_1fr)_1.4fr]">
           {/* Image with fade-right */}

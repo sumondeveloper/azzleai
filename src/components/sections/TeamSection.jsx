@@ -8,7 +8,7 @@ import AnimatonVariants from "../shared/AnimatonVariants";
 const TeamSection = () => {
   return (
     <section>
-      <div className="py-20 xl:py-[130px]">
+      <div className="py-20 xl:py-[130px] overflow-hidden">
         <MaxWidthWrapper>
           <AnimatonVariants animation="fade-up" duration={0.7} delay={0}>
             <div className="mb-10 flex flex-wrap items-center justify-between lg:mb-12 xl:mb-20">

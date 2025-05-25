@@ -6,7 +6,7 @@ import AnimatonVariants from "../shared/AnimatonVariants";
 
 const AudienceSection = () => {
   return (
-    <section className="bg-white py-5 text-primary">
+    <section className="bg-white py-5 text-primary overflow-hidden">
       <MaxWidthWrapper>
         {/* Top Section */}
         <div className="flex flex-col justify-between sm:flex-row items-center lg:gap-25 sm:gap-8">

@@ -7,7 +7,7 @@ import AnimatonVariants from "../shared/AnimatonVariants";
 
 const AboutClientSection = () => {
   return (
-    <MaxWidthWrapper className="py-10">
+    <MaxWidthWrapper className="py-10 overflow-hidden">
       <AnimatonVariants animation="fade-up" delay={0.3}>
         <div className="sm:max-w-md mx-auto lg:max-w-5xl">
           <h3 className="text-[36px] font-secondary text-center leading-10 font-bold lg:text-[80px] lg:leading-[80px]">

@@ -6,7 +6,7 @@ const VideoPlayer = ({ isGradient }) => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <section className="bg-white lg:py-24 py-15 relative ">
+    <section className="bg-white lg:py-24 py-15 relative overflow-hidden">
       {/* Gradient Background */}
       <AnimatonVariants>
         {isGradient && (

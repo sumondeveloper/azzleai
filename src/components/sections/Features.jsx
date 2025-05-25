@@ -5,7 +5,7 @@ import MaxWidthWrapper from "../shared/MaxWidthWrapper";
 
 const Features = () => {
   return (
-    <section className="py-20 bg-white font-secondary">
+    <section className="py-20 bg-white font-secondary overflow-hidden">
       <MaxWidthWrapper>
         <div className="lg:max-w-2xl">
           <AnimatonVariants>

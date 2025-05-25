@@ -11,7 +11,7 @@ const Services = () => {
   return (
     <>
       <PageNavbar pages="Our Services" page="Services" />
-      <section className="lg:py-20 py-4 bg-white font-secondary">
+      <section className="lg:py-20 py-4 bg-white font-secondary overflow-hidden">
         <MaxWidthWrapper>
           <div className="lg:max-w-3xl mx-auto max-w-sm">
             <AnimatonVariants>
