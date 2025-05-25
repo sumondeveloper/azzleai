@@ -14,9 +14,9 @@ const ServiceDetails = () => {
   return (
     <>
       <PageNavbar pages="Data Analytics" page="Service Details" />
-      <section className="py-10">
+      <section className="py-10 overflow-hidden">
         <MaxWidthWrapper>
-          <div className="overflow-hidden">
+          <div className="">
             {/* top row */}
             <div className="flex flex-col sm:flex-row items-center justify-between gap-10 lg:gap-20">
               <div>
