@@ -2,6 +2,7 @@ import { categories, recentPosts, tags } from "../../utils/constants";
 import SearchIcon from "../../assets/icons/search.svg";
 import CalenderIcon from "../../assets/icons/calender.svg";
 import { Link } from "react-router-dom";
+import Button from "./Button";
 
 const BlogSidebar = () => {
   return (
@@ -119,13 +120,12 @@ const BlogSidebar = () => {
             type="email"
             name="sidebar-newsletter"
             placeholder="Enter your email address"
-            className="h-[60px] w-full rounded-[50px] border border-colorCodGray bg-transparent px-10 py-[15px] text-lg outline-none transition-all placeholder:text-black focus:border-colorOrangyRed"
+            className="h-[60px] w-full rounded-[50px] border border-red-500 bg-transparent px-10 py-[15px] text-lg outline-none transition-all placeholder:text-black focus:border-colorOrangyRed"
           />
-          <button
-            type="submit"
-            className="button mt-5 block rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-red-500 hover:border-orange-500 hover:text-white hover:bg-red-500 font-bold"
-          >
-            Subscribe Now
+          <button type="submit" className="mt-5 ">
+            <Button className="sm:px-25 py-4 bg-black text-white px-20 sm:w-full ">
+              Subscribe Now
+            </Button>
           </button>
         </form>
       </div>

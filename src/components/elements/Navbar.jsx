@@ -36,7 +36,7 @@ const Navbar = () => {
               <Button>Login</Button>
             </Link>
             <Link to="/signup">
-              <Button className="bg-black text-white py-3">Sign up free</Button>
+              <Button className="bg-black text-white py-2">Sign up free</Button>
             </Link>
           </div>
 

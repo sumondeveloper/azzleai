@@ -42,7 +42,6 @@ const Pricing = () => {
                 </button>
               </div>
             </div>
-            {/* Pricing Cards */}
           </div>
         </MaxWidthWrapper>
         <div className="mx-auto max-w-7xl px-5 lg:px-0">

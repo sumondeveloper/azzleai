@@ -9,7 +9,7 @@ const Blog = () => {
   return (
     <>
       <PageNavbar pages="Our Blog" page="Our Blog" />
-      <section className="blog-section py-20 xl:py-[120px]">
+      <section className="blog-section py-20 mb-30 xl:py-[120px]">
         <MaxWidthWrapper>
           <div className="grid grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-[2fr_1fr]">
             {/* Blog Posts */}

@@ -1,6 +1,9 @@
+import { Link } from "react-router-dom";
+import Button from "../shared/Button";
+
 const PricingCard = ({ plan }) => {
   return (
-    <li className="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-10 transition-all duration-300 ease-linear hover:bg-black bg-[#efeae3] font-primary text-black">
+    <li className="group flex flex-col rounded-[10px] bg-colorLinenRuffle p-10 transition-all duration-300 ease-linear hover:bg-black bg-[#efeae3] font-primary text-black">
       <h3 className="font-secondary text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
         {plan.title}
       </h3>
@@ -15,12 +18,12 @@ const PricingCard = ({ plan }) => {
       <p className="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white font-primary">
         {plan.description}
       </p>
-      <a
-        href="/pricing"
-        className="button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed group-hover:border-colorOrangyRed group-hover:text-white group-hover:border-red-500 font-bold hover:bg-red-500 hover:text-white "
+      <Link
+        to="/contact"
+        className="button-slide mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black font-bold transition-all duration-300 ease-linear hover:text-white hover:border-[rgb(254,51,10)] group-hover:border-red-500 group-hover:text-white"
       >
         Choose the plan
-      </a>
+      </Link>
     </li>
   );
 };

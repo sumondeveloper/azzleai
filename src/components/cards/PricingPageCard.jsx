@@ -1,5 +1,6 @@
 import CheckOrange from "../../assets/icons/icon-orang-badgecheck.svg";
 import CheckBlack from "../../assets/icons/icon-black-badge-check.svg";
+import { Link } from "react-router-dom";
 
 const PricingPageCard = ({ plan }) => {
   return (
@@ -48,12 +49,12 @@ const PricingPageCard = ({ plan }) => {
         ))}
       </div>
 
-      <a
-        href="/pricing"
-        className="button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed group-hover:border-colorOrangyRed group-hover:text-white group-hover:border-red-500 font-bold hover:bg-red-500 hover:text-white "
+      <Link
+        to="/contact"
+        className="button-slide mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black font-bold transition-all duration-300 ease-linear hover:text-white hover:border-[rgb(254,51,10)] group-hover:border-red-500 group-hover:text-white"
       >
         Choose the plan
-      </a>
+      </Link>
     </li>
   );
 };

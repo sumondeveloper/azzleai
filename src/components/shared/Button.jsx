@@ -1,15 +1,37 @@
+import { motion } from "framer-motion";
 import { cn } from "../../utils/cn";
 
 const Button = ({ className, children }) => {
   return (
-    <div
+    <motion.button
+      whileHover="hover"
+      initial="initial"
       className={cn(
-        "rounded-[50px] border border-[border-[#7F8995] px-6 py-2 font-bold text-lg hover:bg-red-500 outline-none hover:text-white transition-colors duration-500 inline-block cursor-pointer",
+        "relative overflow-hidden rounded-[50px] border px-6 py-2 font-bold text-lg text-primary group transition-colors duration-300 cursor-pointer ",
         className
       )}
+      variants={{
+        initial: { borderColor: "rgb(127 137 149)" }, // original gray border
+        hover: { borderColor: "rgb(254 51 10)" }, // your desired red color
+      }}
+      transition={{ duration: 0.4, ease: "easeInOut" }}
     >
-      {children}
-    </div>
+      {/* Background animation */}
+      <motion.span
+        className="absolute inset-0 bg-[rgb(254,51,10)] z-0"
+        variants={{
+          initial: { y: "-100%" },
+          hover: { y: "0%" },
+        }}
+        transition={{ duration: 0.4, ease: "easeInOut" }}
+      />
+
+      {/* Button text */}
+      <span className="relative z-10 transition-colors duration-300 group-hover:text-white">
+        {children}
+      </span>
+    </motion.button>
   );
 };
+
 export default Button;
