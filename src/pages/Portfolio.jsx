@@ -3,20 +3,8 @@ import PageNavbar from "../components/shared/PageNavbar";
 import ArrowBlack from "../assets/icons/icon-black-long-arrow-right.svg";
 import { portfolioItems } from "../utils/constants";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-
-const fadeUpVariant = {
-  hidden: { opacity: 0, y: 50 },
-  visible: (i) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.7,
-      delay: i * 0.2,
-      ease: "easeOut",
-    },
-  }),
-};
+import { motion } from "motion/react";
+import { fadeUpVariant } from "../utils/variants";
 
 const Portfolio = () => {
   return (
