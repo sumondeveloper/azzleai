@@ -49,15 +49,21 @@ const PricingSection = () => {
             </div>
 
             {/* Pricing Cards */}
-            <AnimatonVariants>
-              <div className="mt-12 lg:mt-16 xl:mt-20">
+
+            <div className="mt-12 lg:mt-16 xl:mt-20">
+              <AnimatonVariants
+                animation="fade-right"
+                delay={0.5}
+                duration={0.5}
+                className="mt-12"
+              >
                 <ul className=" grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
                   {plans.map((plan, idx) => (
                     <PricingCard key={idx} plan={plan} />
                   ))}
                 </ul>
-              </div>
-            </AnimatonVariants>
+              </AnimatonVariants>
+            </div>
           </div>
         </div>
       </MaxWidthWrapper>

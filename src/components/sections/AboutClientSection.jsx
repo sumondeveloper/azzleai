@@ -48,30 +48,24 @@ const AboutClientSection = () => {
 
       {/* second row */}
       <div className="mt-20 flex flex-col sm:flex-row gap-5 lg:gap-6 items-center justify-between">
-        <div>
-          <AnimatonVariants animation="fade-left" delay={0.3}>
+        <AnimatonVariants animation="fade-left" delay={0.5} duration={0.7}>
+          <div>
             <h2 className="text-[36px] leading-10 font-bold font-secondary tracking-tight lg:text-[80px] lg:leading-[80px] lg:tracking-normal">
               Delivering the best solutions with AI
             </h2>
-          </AnimatonVariants>
 
-          <AnimatonVariants animation="fade-left" delay={0.4}>
             <p className="text-primary font-primary text-lg mt-5">
               Our mission is to empower businesses with AI-powered solutions
               that increase productivity, improve decision-making and drive
               growth.
             </p>
-          </AnimatonVariants>
 
-          <AnimatonVariants animation="fade-left" delay={0.5}>
             <p className="text-primary font-primary text-lg mt-5">
               Since 2016 we have been passionate about helping our clients
               harness With a team of AI experts and data scientists their full
               potential & stay competitive in an increasingly digital world.
             </p>
-          </AnimatonVariants>
 
-          <AnimatonVariants animation="fade-up" delay={0.6}>
             <div className="mt-5 sm:mt-10">
               <Link to="/contact">
                 <Button className="bg-black text-white py-3">
@@ -79,10 +73,10 @@ const AboutClientSection = () => {
                 </Button>
               </Link>
             </div>
-          </AnimatonVariants>
-        </div>
+          </div>
+        </AnimatonVariants>
 
-        <AnimatonVariants animation="zoom" delay={0.5}>
+        <AnimatonVariants animation="fade-right" delay={0.5} duration={0.7}>
           <img
             src={AboutImageTwo}
             alt=""
