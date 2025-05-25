@@ -6,28 +6,39 @@ import ShareSvg from "../../assets/icons/share.svg";
 import DownloadSvg from "../../assets/icons/download.svg";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import AnimatonVariants from "./AnimatonVariants";
 const BlogArticle = () => {
   return (
-    <article className="jos overflow-hidden bg-white">
+    <article className="overflow-hidden bg-white">
       <div className="mb-7 block overflow-hidden rounded-[10px]">
-        <img
-          src={BlogOne}
-          alt="blog-main-1"
-          width={856}
-          height={540}
-          className="h-auto w-full scale-100 object-cover"
-        />
+        <AnimatonVariants>
+          <img
+            src={BlogOne}
+            alt="blog-main-1"
+            width={856}
+            height={540}
+            className="h-auto w-full scale-100 object-cover"
+          />
+        </AnimatonVariants>
       </div>
       <ul className="flex flex-wrap items-center gap-6 text-lg font-primary ">
         <li className="relative font-semibold after:absolute after:left-full after:top-1/2 after:h-[7px] after:w-[7px] after:-translate-y-1/2 after:translate-x-2 after:rounded-full after:bg-colorCodGray last:after:hidden">
-          <a className="hover:text-colorOrangyRed" href="/blog-details">
+          <Link
+            to="#"
+            className="hover:text-colorOrangyRed"
+            href="/blog-details"
+          >
             Business
-          </a>
+          </Link>
         </li>
         <li className="relative font-semibold after:absolute after:left-full after:top-1/2 after:h-[7px] after:w-[7px] after:-translate-y-1/2 after:translate-x-2 after:rounded-full after:bg-colorCodGray last:after:hidden">
-          <a className="hover:text-colorOrangyRed" href="/blog-details">
+          <Link
+            to="#"
+            className="hover:text-colorOrangyRed"
+            href="/blog-details"
+          >
             June 12, 2024
-          </a>
+          </Link>
         </li>
       </ul>
       <h5 className="mb-3 mt-5 text-2xl font-secondary tracking-tighter font-bold">
@@ -130,51 +141,56 @@ const BlogArticle = () => {
       <p className="mb-7 last:mb-0 text-lg font-primary text-primary">
         Thanks for reading 🖤
       </p>
-      <div className="flex justify-between text-lg font-medium">
-        <div className="flex gap-7">
-          <div className="flex items-center gap-2">
-            <img src={LikeSvg} alt="" />
-            <span>200</span>
+      <AnimatonVariants>
+        <div className="flex justify-between text-lg font-medium">
+          <div className="flex gap-7">
+            <div className="flex items-center gap-2">
+              <img src={LikeSvg} alt="" />
+              <span>200</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <img src={CommentSvg} alt="" />
+              <span>15</span>
+            </div>
           </div>
-          <div className="flex items-center gap-2">
-            <img src={CommentSvg} alt="" />
-            <span>15</span>
+          <div className="flex gap-3">
+            <div className="flex items-center gap-2">
+              <img src={ShareSvg} alt="" />
+            </div>
+            <div className="flex items-center gap-2">
+              <img src={DownloadSvg} alt="" />
+            </div>
           </div>
         </div>
-        <div className="flex gap-3">
-          <div className="flex items-center gap-2">
-            <img src={ShareSvg} alt="" />
-          </div>
-          <div className="flex items-center gap-2">
-            <img src={DownloadSvg} alt="" />
-          </div>
-        </div>
-      </div>
+      </AnimatonVariants>
       <div className="my-[50px] h-[1px] w-full bg-[#EAEDF0]"></div>
       {/* prev next  */}
-      <div className="flex flex-col justify-between md:flex-row md:gap-x-10 xl:gap-x-24 xxl:gap-x-[196px]">
-        <Link class="group text-left" to="/blogdetails">
-          <span class="inline-flex items-center gap-x-3 text-[21px] transition-all duration-300 group-hover:text-red-500 font-extrabold font-primary">
-            <ChevronLeft />
-            Previous post
-          </span>
-          <div className="lg:max-w-xl mx-auto">
+      <AnimatonVariants>
+        <div className="flex flex-col justify-between md:flex-row md:gap-x-10 xl:gap-x-24 xxl:gap-x-[196px]">
+          <Link class="group text-left" to="/blogdetails">
+            <span class="inline-flex items-center gap-x-3 text-[21px] transition-all duration-300 group-hover:text-red-500 font-extrabold font-primary">
+              <ChevronLeft />
+              Previous post
+            </span>
+            <div className="lg:max-w-xl mx-auto">
+              <p className="text-lg font-primary text-primary">
+                Amazon testing AI tools to improve product descriptions: a
+                game-changer
+              </p>{" "}
+            </div>
+          </Link>
+          <Link className="group text-right" to="/blog-details">
+            <span className="inline-flex flex-row-reverse items-center gap-x-3 text-[21px] transition-all duration-300 group-hover:text-red-500 font-extrabold font-primary">
+              <ChevronRight />
+              Next post
+            </span>
             <p className="text-lg font-primary text-primary">
-              Amazon testing AI tools to improve product descriptions: a
-              game-changer
-            </p>{" "}
-          </div>
-        </Link>
-        <Link className="group text-right" to="/blog-details">
-          <span className="inline-flex flex-row-reverse items-center gap-x-3 text-[21px] transition-all duration-300 group-hover:text-red-500 font-extrabold font-primary">
-            <ChevronRight />
-            Next post
-          </span>
-          <p className="text-lg font-primary text-primary">
-            3 best AI businesses to make money with in 2024 everyone is buzzing
-          </p>
-        </Link>
-      </div>
+              3 best AI businesses to make money with in 2024 everyone is
+              buzzing
+            </p>
+          </Link>
+        </div>
+      </AnimatonVariants>
     </article>
   );
 };
