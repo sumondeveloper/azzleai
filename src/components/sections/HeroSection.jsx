@@ -3,6 +3,7 @@ import MaxWidthWrapper from "../shared/MaxWidthWrapper";
 import Banner from "../../assets/images/banner.webp";
 import LogoTicker from "./LogoTicker";
 import { Link } from "react-router-dom";
+import AnimatonVariants from "../shared/AnimatonVariants";
 
 const HeroSection = () => {
   return (
@@ -31,19 +32,23 @@ const HeroSection = () => {
           </Link>
         </div>
         <div className="mt-15">
-          <img
-            src={Banner}
-            alt=""
-            height={640}
-            className="h-auto w-full rounded-2xl lg:rounded-4xl sm:w-full"
-          />
+          <AnimatonVariants animation="zoom" delay={0.5}>
+            <img
+              src={Banner}
+              alt=""
+              height={640}
+              className="h-auto w-full rounded-2xl lg:rounded-4xl sm:w-full"
+            />
+          </AnimatonVariants>
         </div>
         <div class="my-10 h-[1px] w-full bg-[#DBD6CF] lg:my-16 xl:my-20"></div>
-        <p className="sm:text-sm text-xl font-primary text-center text-primary md:text-lg">
-          Companies of all sizes trust us to find AI SaaS critical to their
-          growth and innovation
-        </p>
-        <LogoTicker />
+        <AnimatonVariants>
+          <p className="sm:text-sm text-xl font-primary text-center text-primary md:text-lg">
+            Companies of all sizes trust us to find AI SaaS critical to their
+            growth and innovation
+          </p>
+          <LogoTicker />
+        </AnimatonVariants>
       </MaxWidthWrapper>
     </section>
   );

@@ -1,6 +1,7 @@
 import ArrowRight from "../../assets/icons/arrowright.svg";
 import ArrowOrange from "../../assets/icons/arroworange.svg";
 import { Link } from "react-router-dom";
+import AnimatonVariants from "../shared/AnimatonVariants";
 
 const FeatureCard = ({ feature }) => {
   return (

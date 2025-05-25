@@ -2,6 +2,7 @@ import { useState } from "react";
 import PricingCard from "../cards/PricingCard";
 import { monthlyPlans, annuallyPlans } from "../../utils/constants";
 import MaxWidthWrapper from "../shared/MaxWidthWrapper";
+import AnimatonVariants from "../shared/AnimatonVariants";
 
 const PricingSection = () => {
   const [isMonthly, setIsMonthly] = useState(true);
@@ -14,9 +15,11 @@ const PricingSection = () => {
       <MaxWidthWrapper>
         <div className="relative z-50">
           <div className="lg:max-w-3xl sm:max-w-[364px] mx-auto">
-            <h2 className="text-[36px] font-secondary leading-10 text-primary font-bold text-center lg:text-[80px] lg:leading-[90px]">
-              Cost-effectively build any software
-            </h2>
+            <AnimatonVariants>
+              <h2 className="text-[36px] font-secondary leading-10 text-primary font-bold text-center lg:text-[80px] lg:leading-[90px]">
+                Cost-effectively build any software
+              </h2>
+            </AnimatonVariants>
           </div>
           {/* Toggle */}
           <div className="container mx-auto font-primary mt-10 ">
@@ -46,13 +49,15 @@ const PricingSection = () => {
             </div>
 
             {/* Pricing Cards */}
-            <div className="mt-12 lg:mt-16 xl:mt-20">
-              <ul className=" grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-                {plans.map((plan, idx) => (
-                  <PricingCard key={idx} plan={plan} />
-                ))}
-              </ul>
-            </div>
+            <AnimatonVariants>
+              <div className="mt-12 lg:mt-16 xl:mt-20">
+                <ul className=" grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                  {plans.map((plan, idx) => (
+                    <PricingCard key={idx} plan={plan} />
+                  ))}
+                </ul>
+              </div>
+            </AnimatonVariants>
           </div>
         </div>
       </MaxWidthWrapper>
