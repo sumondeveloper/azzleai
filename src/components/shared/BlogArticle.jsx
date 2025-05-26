@@ -143,7 +143,7 @@ const BlogArticle = () => {
       </p>
       <AnimatonVariants>
         <div className="flex justify-between text-lg font-medium">
-          <div className="flex gap-7">
+          <div className="flex gap-7 cursor-pointer">
             <div className="flex items-center gap-2">
               <img src={LikeSvg} alt="" />
               <span>200</span>
@@ -153,7 +153,7 @@ const BlogArticle = () => {
               <span>15</span>
             </div>
           </div>
-          <div className="flex gap-3">
+          <div className="flex gap-3 cursor-pointer">
             <div className="flex items-center gap-2">
               <img src={ShareSvg} alt="" />
             </div>
