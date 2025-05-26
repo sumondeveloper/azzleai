@@ -140,6 +140,11 @@ export const Menus = [
           },
         ],
       },
+
+      {
+        name: "Pricing",
+        path: "/pricing",
+      },
       {
         name: "Utilities",
         path: "/utiilities",
