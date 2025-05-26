@@ -31,7 +31,7 @@ const BlogSidebar = () => {
           {categories.map((category, index) => (
             <li key={index} className="mb-6 last:mb-0">
               <Link
-                to="/blogdetails"
+                to="#"
                 className="text-black hover:text-red-500 font-primary text-lg"
               >
                 {category.name} ({category.count})
@@ -53,18 +53,18 @@ const BlogSidebar = () => {
               className="group flex flex-col items-center gap-x-4 gap-y-4 sm:flex-row"
             >
               <Link
-                to="/blogdetails"
+                to="#"
                 className="inline-block h-[150px] w-full overflow-hidden rounded-[5px] sm:h-[100px] sm:w-[150px]"
               >
                 <img
                   src={post.image}
-                  alt={`recent-post-${index}`}
+                  alt=""
                   className="h-full w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105"
                 />
               </Link>
               <div className="flex w-full flex-col gap-y-3 sm:w-auto sm:flex-1">
                 <Link
-                  to="/blogdetails"
+                  to="#"
                   className="flex items-center gap-[10px] text-sm hover:text-colorOrangyRed"
                 >
                   <div className="h-6 w-6">
@@ -77,7 +77,7 @@ const BlogSidebar = () => {
                   {post.date}
                 </Link>
                 <Link
-                  to="/blogdetails"
+                  to="#"
                   className="text-base font-bold hover:text-red-500 text-primary tracking-tight font-primary"
                 >
                   {post.title}
@@ -97,7 +97,7 @@ const BlogSidebar = () => {
           {tags.map((tag, index) => (
             <li key={index}>
               <Link
-                to="/blogdetails"
+                to="#"
                 className="inline-block rounded-[55px] bg-black/5 px-5 py-1 hover:bg-red-500 transition-colors duration-300 hover:text-white font-medium"
               >
                 {tag}
@@ -122,11 +122,11 @@ const BlogSidebar = () => {
             placeholder="Enter your email address"
             className="h-[60px] w-full rounded-[50px] border border-red-500 bg-transparent px-10 py-[15px] text-lg outline-none transition-all placeholder:text-black focus:border-colorOrangyRed"
           />
-          <button type="submit" className="mt-5 ">
+          <Link to="#" className="mt-5 ">
             <Button className="sm:px-25 py-4 bg-black text-white px-20 sm:w-full ">
               Subscribe Now
             </Button>
-          </button>
+          </Link>
         </form>
       </div>
     </aside>

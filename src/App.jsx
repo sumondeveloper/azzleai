@@ -18,6 +18,7 @@ import Portfolio from "./pages/Portfolio";
 import PortfolioDetails from "./pages/PortfolioDetails";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import BlogArticle from "./components/shared/BlogArticle";
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/servicedetails" element={<ServiceDetails />} />
           <Route path="/blogs" element={<Blog />} />
-          <Route path="/blogdetails" element={<BlogDetails />} />
+          <Route path="/blog/:id" element={<BlogDetails />} />
           <Route path="/faq-1" element={<Faq />} />
           <Route path="/faq-2" element={<Faq2 />} />
           <Route path="/pricing" element={<Pricing />} />

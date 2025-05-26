@@ -1,4 +1,5 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Pagination = () => {
   return (
@@ -6,36 +7,36 @@ const Pagination = () => {
       <ul className="flex gap-x-[15px] relative">
         {/* Prev Button */}
         <li>
-          <a
-            href="/blog"
+          <Link
+            to="#"
             className="group relative flex h-[50px] w-[50px] items-center justify-center rounded-full bg-white text-lg font-bold transition-all duration-300 hover:bg-black hover:text-white active:bg-black"
           >
             <ChevronLeft />
-          </a>
+          </Link>
         </li>
 
         {/* Page Numbers */}
         {[1, 2, 3].map((page) => (
           <li key={page}>
-            <a
-              href="/blog"
+            <Link
+              to="#"
               className={`group font-extrabold flex h-[50px] w-[50px] items-center justify-center rounded-full bg-white text-xl transition-all duration-300 hover:bg-black hover:text-white ${
                 page === 1 ? "active:bg-black active:text-white" : ""
               }`}
             >
               {page}
-            </a>
+            </Link>
           </li>
         ))}
 
         {/* Next Button */}
         <li>
-          <a
-            href="/blog"
+          <Link
+            to="#s"
             className="group relative flex h-[50px] w-[50px] items-center justify-center rounded-full bg-white text-lg font-bold transition-all duration-300 hover:bg-black hover:text-white"
           >
             <ChevronRight />
-          </a>
+          </Link>
         </li>
       </ul>
     </div>

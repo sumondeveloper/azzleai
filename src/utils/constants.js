@@ -47,7 +47,7 @@ import Blog5 from "../assets/images/blog5.webp";
 import Blog6 from "../assets/images/blog6.webp";
 import RecentBlogOne from "../assets/images/blog-recent1.jpg";
 import RecentBlogTwo from "../assets/images/blog-recent-img2.jpg";
-
+import BlogInnerImage from "../assets/images/blog-inner-image.jpg";
 import RecentBlogThree from "../assets/images/blog-recent-img3.jpg";
 import PortfolioImage1 from "../assets/images/portfolio-img-1.jpg";
 import PortfolioImage2 from "../assets/images/portfolio-img-2.jpg";
@@ -94,7 +94,7 @@ export const Menus = [
           },
           {
             name: "Blog Details",
-            path: "/blogdetails",
+            path: "/blog/blog1",
           },
         ],
       },
@@ -610,64 +610,324 @@ export const locations = [
 ];
 export const blogs = [
   {
-    id: 1,
+    id: "blog1",
     image: Blog1,
     category: "Business",
     date: "June 12, 2024",
+    views: 250,
+    comments: 15,
+    innerImage: BlogInnerImage,
+    likes: 200,
     title: "10 ways to supercharge startup with AI integration",
+    footerContent:
+      "The key to startup success is focusing AI efforts on the applications that will differentiate your business and have the biggest impact at each stage of growth. With the right strategy, AI can unlock transformation opportunities and exponential value creation.",
     excerpt:
-      "The rapid advancements in AI have paved the way for startups to revolutionize operations...",
+      "The rapid advancements in AI have paved the way for startups to revolutionize their businesses. This article explores 10 key ways AI can be integrated into startups and provides real-world examples of its tangible impact across industries.",
     link: "/blog-details",
+
+    content: {
+      aiPoints: [
+        {
+          title: "1. AI-Powered Customer Support",
+          desc: "AI chatbots and virtual assistants can handle routine queries, troubleshoot issues, and guide users, improving response times. This frees up human agents to tackle complex tasks, enhancing user experience.",
+        },
+        {
+          title: "2. Predictive Maintenance",
+          desc: "By analyzing usage patterns, ML algorithms can predict failures, enabling proactive maintenance and minimizing downtime.",
+        },
+        {
+          title: "3. Enhanced Cybersecurity",
+          desc: "AI anomaly detection, behavior analysis, and intrusion prevention boost security and data protection. This safeguards infrastructure and builds user trust.",
+        },
+        {
+          isImage: true,
+          imageSrc: BlogInnerImage,
+          alt: "blog-inner-image",
+        },
+        {
+          title: "4. Personalized User Experiences",
+          desc: "By analyzing behavior and preferences, AI tailors interfaces and features. This improves satisfaction and encourages retention.",
+        },
+        {
+          title: "5. Automated Workflows",
+          desc: "Automating tasks like software updates and license management with AI reduces manual efforts and minimizes errors.",
+        },
+      ],
+
+      keyTakeaways: [
+        "Start with chatbot, workflow automation, and basic analytics.",
+        "Gradually scale AI adoption as the business matures.",
+        "Identify the right AI use cases to solve pressing needs.",
+        "Integrate AI into workflows and processes seamlessly.",
+        "Get creative — leverage partnerships and talent from outside.",
+      ],
+    },
   },
+
   {
-    id: 2,
+    id: "blog2",
     image: Blog2,
+    innerImage: BlogInnerImage,
     category: "Startup",
     date: "May 30, 2024",
+    views: 200,
+    comments: 20,
+    likes: 250,
     title: "5 essential tools for early-stage founders",
+    footerContent:
+      "The key to startup success is focusing AI efforts on the applications that will differentiate your business and have the biggest impact at each stage of growth. With the right strategy, AI can unlock transformation opportunities and exponential value creation.",
     excerpt:
-      "Running a startup? These five tools will save your time, energy, and money...",
+      "The rapid advancements in AI have paved the way for startups to revolutionize their businesses. This article explores 10 key ways AI can be integrated into startups and provides real-world examples of its tangible impact across industries.",
     link: "/blog-details",
+    content: {
+      aiPoints: [
+        {
+          title: "1. AI-Powered Customer Support",
+          desc: "AI chatbots and virtual assistants can handle routine queries, troubleshoot issues, and guide users, improving response times. This frees up human agents to tackle complex tasks, enhancing user experience.",
+        },
+        {
+          title: "2. Predictive Maintenance",
+          desc: "By analyzing usage patterns, ML algorithms can predict failures, enabling proactive maintenance and minimizing downtime.",
+        },
+        {
+          title: "3. Enhanced Cybersecurity",
+          desc: "AI anomaly detection, behavior analysis, and intrusion prevention boost security and data protection. This safeguards infrastructure and builds user trust.",
+        },
+        {
+          isImage: true,
+          imageSrc: BlogInnerImage,
+          alt: "blog-inner-image",
+        },
+        {
+          title: "4. Personalized User Experiences",
+          desc: "By analyzing behavior and preferences, AI tailors interfaces and features. This improves satisfaction and encourages retention.",
+        },
+        {
+          title: "5. Automated Workflows",
+          desc: "Automating tasks like software updates and license management with AI reduces manual efforts and minimizes errors.",
+        },
+      ],
+
+      keyTakeaways: [
+        "Start with chatbot, workflow automation, and basic analytics.",
+        "Gradually scale AI adoption as the business matures.",
+        "Identify the right AI use cases to solve pressing needs.",
+        "Integrate AI into workflows and processes seamlessly.",
+        "Get creative — leverage partnerships and talent from outside.",
+      ],
+    },
   },
   {
-    id: 3,
+    id: "blog3",
     image: Blog3,
+    innerImage: BlogInnerImage,
     category: "Technology",
     date: "May 20, 2024",
+    views: 350,
+    comments: 15,
+    likes: 100,
     title: "The rise of AI: Opportunities and Challenges",
+    footerContent:
+      "The key to startup success is focusing AI efforts on the applications that will differentiate your business and have the biggest impact at each stage of growth. With the right strategy, AI can unlock transformation opportunities and exponential value creation.",
     excerpt:
-      "Artificial Intelligence is no longer a buzzword—it's redefining how businesses operate in 2024 and beyond...",
+      "The rapid advancements in AI have paved the way for startups to revolutionize their businesses. This article explores 10 key ways AI can be integrated into startups and provides real-world examples of its tangible impact across industries.",
     link: "/blog-details",
+    content: {
+      aiPoints: [
+        {
+          title: "1. AI-Powered Customer Support",
+          desc: "AI chatbots and virtual assistants can handle routine queries, troubleshoot issues, and guide users, improving response times. This frees up human agents to tackle complex tasks, enhancing user experience.",
+        },
+        {
+          title: "2. Predictive Maintenance",
+          desc: "By analyzing usage patterns, ML algorithms can predict failures, enabling proactive maintenance and minimizing downtime.",
+        },
+        {
+          title: "3. Enhanced Cybersecurity",
+          desc: "AI anomaly detection, behavior analysis, and intrusion prevention boost security and data protection. This safeguards infrastructure and builds user trust.",
+        },
+        {
+          isImage: true,
+          imageSrc: BlogInnerImage,
+          alt: "blog-inner-image",
+        },
+        {
+          title: "4. Personalized User Experiences",
+          desc: "By analyzing behavior and preferences, AI tailors interfaces and features. This improves satisfaction and encourages retention.",
+        },
+        {
+          title: "5. Automated Workflows",
+          desc: "Automating tasks like software updates and license management with AI reduces manual efforts and minimizes errors.",
+        },
+      ],
+
+      keyTakeaways: [
+        "Start with chatbot, workflow automation, and basic analytics.",
+        "Gradually scale AI adoption as the business matures.",
+        "Identify the right AI use cases to solve pressing needs.",
+        "Integrate AI into workflows and processes seamlessly.",
+        "Get creative — leverage partnerships and talent from outside.",
+      ],
+    },
   },
   {
-    id: 4,
+    id: "blog4",
     image: Blog4,
+    innerImage: BlogInnerImage,
     category: "Marketing",
     date: "May 15, 2024",
+    views: 500,
+    comments: 50,
+    likes: 500,
     title: "How to create viral marketing campaigns using data",
+    footerContent:
+      "The key to startup success is focusing AI efforts on the applications that will differentiate your business and have the biggest impact at each stage of growth. With the right strategy, AI can unlock transformation opportunities and exponential value creation.",
     excerpt:
-      "Want your campaigns to go viral? Learn how data-driven marketing increases your chances...",
+      "The rapid advancements in AI have paved the way for startups to revolutionize their businesses. This article explores 10 key ways AI can be integrated into startups and provides real-world examples of its tangible impact across industries.",
     link: "/blog-details",
+    content: {
+      aiPoints: [
+        {
+          title: "1. AI-Powered Customer Support",
+          desc: "AI chatbots and virtual assistants can handle routine queries, troubleshoot issues, and guide users, improving response times. This frees up human agents to tackle complex tasks, enhancing user experience.",
+        },
+        {
+          title: "2. Predictive Maintenance",
+          desc: "By analyzing usage patterns, ML algorithms can predict failures, enabling proactive maintenance and minimizing downtime.",
+        },
+        {
+          title: "3. Enhanced Cybersecurity",
+          desc: "AI anomaly detection, behavior analysis, and intrusion prevention boost security and data protection. This safeguards infrastructure and builds user trust.",
+        },
+        {
+          isImage: true,
+          imageSrc: BlogInnerImage,
+          alt: "blog-inner-image",
+        },
+        {
+          title: "4. Personalized User Experiences",
+          desc: "By analyzing behavior and preferences, AI tailors interfaces and features. This improves satisfaction and encourages retention.",
+        },
+        {
+          title: "5. Automated Workflows",
+          desc: "Automating tasks like software updates and license management with AI reduces manual efforts and minimizes errors.",
+        },
+      ],
+
+      keyTakeaways: [
+        "Start with chatbot, workflow automation, and basic analytics.",
+        "Gradually scale AI adoption as the business matures.",
+        "Identify the right AI use cases to solve pressing needs.",
+        "Integrate AI into workflows and processes seamlessly.",
+        "Get creative — leverage partnerships and talent from outside.",
+      ],
+    },
   },
   {
-    id: 5,
+    id: "blog5",
     image: Blog5,
+    innerImage: BlogInnerImage,
     category: "Design",
     date: "April 29, 2024",
+    views: 200,
+    comments: 50,
+    likes: 230,
     title: "Designing for humans: The psychology of UI/UX",
+    footerContent:
+      "The key to startup success is focusing AI efforts on the applications that will differentiate your business and have the biggest impact at each stage of growth. With the right strategy, AI can unlock transformation opportunities and exponential value creation.",
     excerpt:
-      "Great design is more than aesthetics—understand the psychology behind user-friendly interfaces...",
+      "The rapid advancements in AI have paved the way for startups to revolutionize their businesses. This article explores 10 key ways AI can be integrated into startups and provides real-world examples of its tangible impact across industries.",
     link: "/blog-details",
+    content: {
+      aiPoints: [
+        {
+          title: "1. AI-Powered Customer Support",
+          desc: "AI chatbots and virtual assistants can handle routine queries, troubleshoot issues, and guide users, improving response times. This frees up human agents to tackle complex tasks, enhancing user experience.",
+        },
+        {
+          title: "2. Predictive Maintenance",
+          desc: "By analyzing usage patterns, ML algorithms can predict failures, enabling proactive maintenance and minimizing downtime.",
+        },
+        {
+          title: "3. Enhanced Cybersecurity",
+          desc: "AI anomaly detection, behavior analysis, and intrusion prevention boost security and data protection. This safeguards infrastructure and builds user trust.",
+        },
+        {
+          isImage: true,
+          imageSrc: BlogInnerImage,
+          alt: "blog-inner-image",
+        },
+        {
+          title: "4. Personalized User Experiences",
+          desc: "By analyzing behavior and preferences, AI tailors interfaces and features. This improves satisfaction and encourages retention.",
+        },
+        {
+          title: "5. Automated Workflows",
+          desc: "Automating tasks like software updates and license management with AI reduces manual efforts and minimizes errors.",
+        },
+      ],
+
+      keyTakeaways: [
+        "Start with chatbot, workflow automation, and basic analytics.",
+        "Gradually scale AI adoption as the business matures.",
+        "Identify the right AI use cases to solve pressing needs.",
+        "Integrate AI into workflows and processes seamlessly.",
+        "Get creative — leverage partnerships and talent from outside.",
+      ],
+    },
   },
   {
-    id: 6,
+    id: "blog6",
     image: Blog6,
+    innerImage: BlogInnerImage,
     category: "Growth",
     date: "April 15, 2024",
+    views: 100,
+    comments: 20,
+    likes: 400,
     title: "Scaling your product without breaking things",
+    footerContent:
+      "The key to startup success is focusing AI efforts on the applications that will differentiate your business and have the biggest impact at each stage of growth. With the right strategy, AI can unlock transformation opportunities and exponential value creation.",
     excerpt:
-      "Growth is exciting but also risky. Here’s how to scale smoothly without breaking your product...",
+      "The rapid advancements in AI have paved the way for startups to revolutionize their businesses. This article explores 10 key ways AI can be integrated into startups and provides real-world examples of its tangible impact across industries.",
     link: "/blog-details",
+    content: {
+      aiPoints: [
+        {
+          title: "1. AI-Powered Customer Support",
+          desc: "AI chatbots and virtual assistants can handle routine queries, troubleshoot issues, and guide users, improving response times. This frees up human agents to tackle complex tasks, enhancing user experience.",
+        },
+        {
+          title: "2. Predictive Maintenance",
+          desc: "By analyzing usage patterns, ML algorithms can predict failures, enabling proactive maintenance and minimizing downtime.",
+        },
+        {
+          title: "3. Enhanced Cybersecurity",
+          desc: "AI anomaly detection, behavior analysis, and intrusion prevention boost security and data protection. This safeguards infrastructure and builds user trust.",
+        },
+        {
+          isImage: true,
+          imageSrc: BlogInnerImage,
+          alt: "blog-inner-image",
+        },
+        {
+          title: "4. Personalized User Experiences",
+          desc: "By analyzing behavior and preferences, AI tailors interfaces and features. This improves satisfaction and encourages retention.",
+        },
+        {
+          title: "5. Automated Workflows",
+          desc: "Automating tasks like software updates and license management with AI reduces manual efforts and minimizes errors.",
+        },
+      ],
+
+      keyTakeaways: [
+        "Start with chatbot, workflow automation, and basic analytics.",
+        "Gradually scale AI adoption as the business matures.",
+        "Identify the right AI use cases to solve pressing needs.",
+        "Integrate AI into workflows and processes seamlessly.",
+        "Get creative — leverage partnerships and talent from outside.",
+      ],
+    },
   },
 ];
 export const categories = [

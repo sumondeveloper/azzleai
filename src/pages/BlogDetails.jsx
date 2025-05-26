@@ -1,11 +1,12 @@
 import PageNavbar from "../components/shared/PageNavbar";
 import BlogSidebar from "../components/shared/BlogSidebar";
 import MaxWidthWrapper from "../components/shared/MaxWidthWrapper";
+import { useParams } from "react-router-dom";
 
 import BlogArticle from "../components/shared/BlogArticle";
-import BlogComment from "../components/shared/BlogComment";
 
 const BlogDetails = () => {
+  const { id } = useParams();
   return (
     <>
       <PageNavbar pages="Blog Details" page="Blog Details" />
@@ -16,10 +17,9 @@ const BlogDetails = () => {
               <div className="flex flex-col gap-y-10 lg:gap-y-14 xl:gap-y-20">
                 {/* Blog Article */}
 
-                <BlogArticle />
+                <BlogArticle id={id} />
 
                 {/* Comment Section */}
-                <BlogComment />
               </div>
               {/* Sidebar Placeholder */}
               <BlogSidebar />

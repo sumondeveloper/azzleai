@@ -7,13 +7,18 @@ import DownloadSvg from "../../assets/icons/download.svg";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import AnimatonVariants from "./AnimatonVariants";
-const BlogArticle = () => {
+import { blogs } from "../../utils/constants";
+import BlogComment from "./BlogComment";
+const BlogArticle = ({ id }) => {
+  const blog = blogs.find((b) => b.id === id);
+
+  if (!blog) return <p className="text-center">Blog not found</p>;
   return (
     <article className="overflow-hidden bg-white">
       <div className="mb-7 block overflow-hidden rounded-[10px]">
         <AnimatonVariants>
           <img
-            src={BlogOne}
+            src={blog.image}
             alt="blog-main-1"
             width={856}
             height={540}
@@ -23,120 +28,59 @@ const BlogArticle = () => {
       </div>
       <ul className="flex flex-wrap items-center gap-6 text-lg font-primary ">
         <li className="relative font-semibold after:absolute after:left-full after:top-1/2 after:h-[7px] after:w-[7px] after:-translate-y-1/2 after:translate-x-2 after:rounded-full after:bg-colorCodGray last:after:hidden">
-          <Link
-            to="#"
-            className="hover:text-colorOrangyRed"
-            href="/blog-details"
-          >
-            Business
+          <Link className="hover:text-red-500" to="/blog/1">
+            {blog.category}
           </Link>
         </li>
         <li className="relative font-semibold after:absolute after:left-full after:top-1/2 after:h-[7px] after:w-[7px] after:-translate-y-1/2 after:translate-x-2 after:rounded-full after:bg-colorCodGray last:after:hidden">
-          <Link
-            to="#"
-            className="hover:text-colorOrangyRed"
-            href="/blog-details"
-          >
-            June 12, 2024
+          <Link to="#" className="hover:text-red-500" href="/blog-details">
+            {blog.date}
           </Link>
         </li>
       </ul>
       <h5 className="mb-3 mt-5 text-2xl font-secondary tracking-tighter font-bold">
-        10 ways to supercharge your startup with AI integration: unlock
-        exponential growth
+        {blog.title}
       </h5>
       <p className="mb-7 last:mb-0 text-xl font-primary text-primary">
-        The rapid advancements in AI have paved the way for startups to
-        revolutionize their businesses. This article explores 10 key ways AI can
-        be integrated into startups and provides real-world examples of its
-        tangible impact across industries.
+        {blog.excerpt}
       </p>
       <ul className="mb-7 flex flex-col gap-7 last:mb-0">
-        <li>
-          <div className="font-semibold text-lg font-primary text-primary">
-            1. AI-Powered Customer Support
-          </div>
-          <p className="mb-7 last:mb-0 text-xl font-primary text-primary">
-            AI chatbots and virtual assistants can handle routine queries,
-            troubleshoot issues, and guide users, improving response times. This
-            frees up human agents to tackle complex tasks, enhancing user
-            experience.
-          </p>
-        </li>
-        <li>
-          <div className="font-semibold text-lg font-primary text-primary">
-            2. Predictive Maintenance
-          </div>
-          <p className="mb-7 last:mb-0 text-xl font-primary text-primary">
-            By analyzing usage patterns, ML algorithms can predict failures,
-            enabling proactive maintenance and minimizing downtime.
-          </p>
-        </li>
-        <li>
-          <div className="font-semibold text-lg font-primary text-primary">
-            3. Enhanced Cybersecurity
-          </div>
-          <p className="mb-7 last:mb-0 text-xl font-primary text-primary">
-            AI anomaly detection, behavior analysis, and intrusion prevention
-            boost security and data protection. This safeguards infrastructure
-            and builds user trust.
-          </p>
-        </li>
-        <li>
-          <div className="overflow-hidden rounded-[10px]">
-            <img
-              src={BlogInnerImage}
-              alt="blog-inner-image"
-              width={100}
-              height={100}
-              className="h-auto w-full"
-            />
-          </div>
-        </li>
-        <li>
-          <div className="font-semibold text-lg font-primary text-primary">
-            4. Personalized User Experiences
-          </div>
-          <p className="mb-7 last:mb-0 text-xl font-primary text-primary">
-            By analyzing behavior and preferences, AI tailors interfaces and
-            features. This improves satisfaction and encourages retention.
-          </p>
-        </li>
-        <li>
-          <div className="font-semibold text-lg font-primary text-primary">
-            5. Automated Workflows
-          </div>
-          <p className="mb-7 last:mb-0 text-xl font-primary text-primary">
-            Automating tasks like software updates and license management with
-            AI reduces manual efforts and minimizes errors.
-          </p>
-        </li>
+        {blog.content.aiPoints.map((item, index) => (
+          <li key={index}>
+            {item.isImage ? (
+              <img
+                src={item.imageSrc}
+                alt={item.alt || "blog inner"}
+                className="my-7 rounded"
+              />
+            ) : (
+              <>
+                <div className="font-semibold text-lg font-primary text-primary">
+                  {item.title}
+                </div>
+                <p className="mb-7 last:mb-0 text-lg font-primary text-primary">
+                  {item.desc}
+                </p>
+              </>
+            )}
+          </li>
+        ))}
       </ul>
-      <div className="font-semibold text-lg font-primary text-primary">
+      <div className="font-semibold text-lg font-primary text-primary mb-2">
         Key Takeaways for Founders
       </div>
       <ul className="mb-7 last:mb-0">
-        <li className="relative pl-[30px] after:absolute after:left-[10px] after:top-3 after:h-[5px] after:w-[5px] after:rounded-[50%] after:bg-black text-primary text-lg font-primary">
-          Start with chatbot, workflow automation, and basic analytics.
-        </li>
-        <li className="relative pl-[30px] after:absolute after:left-[10px] after:top-3 after:h-[5px] after:w-[5px] after:rounded-[50%] after:bg-black text-primary text-lg font-primary">
-          Gradually scale AI adoption as the business matures.
-        </li>
-        <li className="relative pl-[30px] after:absolute after:left-[10px] after:top-3 after:h-[5px] after:w-[5px] after:rounded-[50%] after:bg-black text-primary text-lg font-primary">
-          Identify the right AI use cases to solve pressing needs.
-        </li>
-        <li className="relative pl-[30px] after:absolute after:left-[10px] after:top-3 after:h-[5px] after:w-[5px] after:rounded-[50%] after:bg-black text-primary text-lg font-primary">
-          Integrate AI into workflows and processes seamlessly.
-        </li>
-        <li className="relative pl-[30px] after:absolute after:left-[10px] after:top-3 after:h-[5px] after:w-[5px] after:rounded-[50%] after:bg-black text-primary text-lg font-primary">
-          Get creative — leverage partnerships and talent from outside.
-        </li>
+        {blog.content.keyTakeaways.map((content, index) => (
+          <li
+            key={index}
+            className="relative pl-[30px] after:absolute after:left-[10px] after:top-3 after:h-[5px] after:w-[5px] after:rounded-[50%] after:bg-black text-primary text-lg font-primary"
+          >
+            {content}
+          </li>
+        ))}
       </ul>
       <p className="mb-7 last:mb-0 text-lg font-primary text-primary">
-        The key to startup success is focusing AI efforts on the applications
-        that will differentiate your business and have the biggest impact at
-        each stage of growth. With the right strategy, AI can unlock
-        transformation opportunities and exponential value creation.
+        {blog.footerContent}
       </p>
       <p className="mb-7 last:mb-0 text-lg font-primary text-primary">
         Thanks for reading 🖤
@@ -146,11 +90,11 @@ const BlogArticle = () => {
           <div className="flex gap-7 cursor-pointer">
             <div className="flex items-center gap-2">
               <img src={LikeSvg} alt="" />
-              <span>200</span>
+              <span>{blog.likes}</span>
             </div>
             <div className="flex items-center gap-2">
               <img src={CommentSvg} alt="" />
-              <span>15</span>
+              <span>{blog.comments}</span>
             </div>
           </div>
           <div className="flex gap-3 cursor-pointer">
@@ -191,6 +135,9 @@ const BlogArticle = () => {
           </Link>
         </div>
       </AnimatonVariants>
+      <div className="mt-20">
+        <BlogComment blog={blog} />
+      </div>
     </article>
   );
 };

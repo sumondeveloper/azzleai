@@ -5,7 +5,7 @@ const BlogCard = ({ post }) => {
   return (
     <AnimatonVariants>
       <li className="group overflow-hidden rounded-[10px] bg-white shadow-md">
-        <Link to="/blogdetails" className="block overflow-hidden">
+        <Link to={`/blog/${post.id}`} className="block overflow-hidden">
           <img
             src={post.image}
             alt={post.alt}
@@ -18,13 +18,13 @@ const BlogCard = ({ post }) => {
             <li className="list-disc">{post.date}</li>
           </ul>
           <h5 className="text-lg lg:text-[24px] font-secondary lg:tracking-tighter lg:leading-7 font-semibold hover:text-red-500 mb-2 cursor-pointer">
-            <a href={post.href}>{post.title}</a>
+            <Link to={`/blog/${post.id}`}>{post.title}</Link>
           </h5>
           <p className="text-gray-600 line-clamp-2 mb-4 text-lg font-primary">
             {post.excerpt}
           </p>
           <Link
-            to={post.href}
+            to={`/blog/${post.id}`}
             className="text-red-500 lg:text-lg  text-sm font-medium"
           >
             Read More

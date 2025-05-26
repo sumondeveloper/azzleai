@@ -3,11 +3,11 @@ import BlogCommentManTwo from "../../assets/images/blogcommentmantwo.webp";
 import AnimatonVariants from "./AnimatonVariants";
 import Button from "./Button";
 
-const BlogComment = () => {
+const BlogComment = ({ blog }) => {
   return (
     <div className="">
       <div className="mb-6 text-[24px] font-extrabold font-primary">
-        2 comments on this post:
+        {blog.comments} comments on this post:
       </div>
 
       {/* Comments List */}
