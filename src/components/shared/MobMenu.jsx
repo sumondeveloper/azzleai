@@ -64,7 +64,7 @@ const MobMenu = ({ Menus }) => {
 
         {/* Back Button */}
         {menuStack.length > 0 && (
-          <div className="flex items-center mb-5 -mt-12 gap-25">
+          <div className="flex items-center mb-5 -mt-12 gap-[90px]">
             <button
               onClick={goBack}
               className="mr-2 text-gray-600"
