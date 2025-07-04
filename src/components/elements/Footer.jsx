@@ -98,7 +98,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="py-9 text-center text-lg font-primary">
-            <p>© Copyright 2025, All Rights Reserved by Mthemeus</p>
+            <p>© Copyright 2025, All Rights Reserved by Sumon</p>
           </div>
         </div>
       </MaxWidthWrapper>
